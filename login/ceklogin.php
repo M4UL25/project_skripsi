@@ -27,16 +27,24 @@ if (isset($_POST['btn_login'])){
     $sql = mysqli_query($conn, "SELECT * FROM tb_admin WHERE username = '$_POST[username]' AND password = '$_POST[password]'");
     
     $cek = mysqli_num_rows($sql);
-    if ($cek > 0) {
-        $_SESSION['username'] = $_POST['username'];
-
-        // echo "<meta http-equiv=refresh content=0; URL='index.php'>";
-        header("Location: ../index.php");
+    
+    if(empty($username)){
+        header("Location: login.php?error=Username Is Required");
+    } else if (empty($password)){
+        header("Location: login.php?error=Password Is Required");
     } else {
-        // echo "<p align=center><b> Username not found</b></p>";
-        // echo "<meta http-equiv=refresh content=2; URL='login.php'>";
-        header("location: ../login/login.php");
+        if ($cek > 0) {
+            $_SESSION['username'] = $_POST['username'];
+    
+            // echo "<meta http-equiv=refresh content=0; URL='index.php'>";
+            header("Location: ../index.php");
+        } else {
+            // echo "<p align=center><b> Username not found</b></p>";
+            // echo "<meta http-equiv=refresh content=2; URL='login.php'>";
+            header("location: login.php");
+        }
     }
+    
 
 }
 

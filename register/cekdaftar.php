@@ -12,7 +12,18 @@ if (isset($_POST['btn_daftar'])) {
 
     if ($query){
         // echo "berhasil";
-        header('location:../login/login.php');
+        // header('location:../login/login.php');
+        echo    "<script>
+                    alert('Simpan data Sukses');
+                    document.location='../admin/useradmin.php';
+                </script>";     
+        exit();
+        // header("location: useradmin.php");
+    } else {
+        echo    "<script>
+                    alert('Simpan data Gagal');
+                    document.location='../admin/useradmin.php';
+                </script>"; 
     }
 
 }
