@@ -14,15 +14,7 @@
 </head>
 
 <body>
-    <!-- Vertically centered modal -->
-    <div class="modal-dialog modal-dialog-centered">
-        ...
-    </div>
-
-    <!-- Vertically centered scrollable modal -->
-    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-        ...
-    </div>
+    
     <div class="container mt-3">
         <div class="row">
             <div class="col-md-8 mx-auto">
@@ -32,13 +24,26 @@
                     </div>
                     <div class="card-body">
                         <div class="isian">
+
+                            <?php if (isset($_GET['error'])) { ?>
+                                <div class="alert alert-warning alert-dismissible fade show mt-1 ms-1 me-1" role="alert">
+                                    <?= $_GET['error'] ?>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            <?php } ?>
+                            <?php if (isset($_GET['scc'])) { ?>
+                                <div class="alert alert-success alert-dismissible fade show mt-1 ms-1 me-1" role="alert">
+                                    <?= $_GET['scc'] ?>
+                                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                                </div>
+                            <?php } ?>
+
                             <form action="../register/cekdaftar.php" method="post">
                                 <div class="tambah mt-2">
                                     <div class="mb-3 row">
                                         <label class="col-sm-2 col-form-label">Nama</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="nama_admin"
-                                                placeholder="Masukkan Nama">
+                                            <input type="text" class="form-control" name="nama_admin" placeholder="Masukkan Nama">
                                         </div>
                                     </div>
                                 </div>
@@ -46,8 +51,7 @@
                                     <div class="mb-3 row">
                                         <label class="col-sm-2 col-form-label">Username</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="username"
-                                                placeholder="Masukkan Username">
+                                            <input type="text" class="form-control" name="username" placeholder="Masukkan Username">
                                         </div>
                                     </div>
                                 </div>
@@ -55,8 +59,7 @@
                                     <div class="mb-3 row">
                                         <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
                                         <div class="col-sm-10">
-                                            <input type="password" class="form-control" name="password"
-                                                placeholder="Masukkan Password">
+                                            <input type="password" class="form-control" name="password" placeholder="Masukkan Password" >
                                         </div>
                                     </div>
                                 </div>
@@ -64,8 +67,7 @@
                                     <div class="mb-3 row">
                                         <label class="col-sm-2 col-form-label">No HP</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="no_hp_admin"
-                                                placeholder="Masukkan No HP">
+                                            <input type="text" class="form-control" name="no_hp_admin" placeholder="Masukkan No HP">
                                         </div>
                                     </div>
                                 </div>
@@ -73,8 +75,7 @@
                                     <div class="mb-3 row">
                                         <label class="col-sm-2 col-form-label">Email</label>
                                         <div class="col-sm-10">
-                                            <input type="text" class="form-control" name="email_admin"
-                                                placeholder="Masukkan Email">
+                                            <input type="text" class="form-control" name="email_admin" placeholder="Masukkan Email">
                                         </div>
                                     </div>
                                 </div>
@@ -104,14 +105,13 @@
                         <div class="col-md-6 mx-auto">
                             <form action="" method="post">
                                 <div class="input-group mb-3">
-                                    <input type="text" name="tcari" class="form-control"
-                                        placeholder="Masukkan kata kunci!">
+                                    <input type="text" name="tcari" class="form-control" placeholder="Masukkan kata kunci!">
                                     <button class="btn btn-primary" name="bcari" type="submit">Cari</button>
                                     <button class="btn btn-danger" name="breset" type="submit">Reset</button>
                                 </div>
                             </form>
                         </div>
-
+            
                         <table class="table">
                             <thead>
                                 <tr>

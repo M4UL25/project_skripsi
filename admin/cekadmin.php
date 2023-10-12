@@ -14,7 +14,9 @@ while($r = mysqli_fetch_array($sql)){
     <td scope="col">'.$username.'</td>
     <td scope="col">'.$no_hp_admin.'</td>
     <td scope="col">'.$email_admin.'</td>
-    <td scope="col">Aksi</td>
+    <td scope="col">
+        <a href="" class="btn btn-primary">Edit</a> <a href="" class="btn btn-danger">Delete</a> 
+    </td>
     ';
 }
 ?>

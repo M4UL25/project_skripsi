@@ -27,26 +27,24 @@ include "koneksi/koneksi.php";
                         <div class="container">
                             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
-                                    <a class="nav-link active" href="./">Home</a>
+                                    <a class="nav-link active" href="#">Home</a>
                                     <a class="nav-link active" href="#">Kategori</a>
                                     <a class="nav-link active" href="#">Berita</a>
                                     <a class="nav-link active" href="#">Konfigurasi</a>
-                                    <a class="nav-link active" href="?mod=useradmin">User Admin</a>
+                                    <a class="nav-link active" href="?pin=useradmin">User Admin</a>
 
                                     <a class="nav-link active" href="koneksi/logout.php">Logout</a>
                                 </div>
                             </div>
                         </div>
-                    </nav>
-                    <div class="container">
-                        content
+                    </nav>                   
                         <?php
-                        if (isset($mod)) {
-                            $mod = $_GET['mod'];
+                        if (isset($pin)) {
+                            $pin = $_GET['pin'];
 
-                            switch ($mod) {
+                            switch ($pin) {
                                 case 'useradmin':
-                                    include "admin/useradmin.php";
+                                    include "admin/coba.php";
                                     break;
                                 default:
                                     echo "Selamat Datang " . $_SESSION['username'] . " ";
@@ -54,7 +52,6 @@ include "koneksi/koneksi.php";
                             }
                         }
                         ?>
-                    </div>
                 </div>
             </div>
             <div class="card-footer text-body-secondary">
