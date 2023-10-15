@@ -31,7 +31,7 @@ include "koneksi/koneksi.php";
                                     <a class="nav-link active" href="#">Kategori</a>
                                     <a class="nav-link active" href="#">Berita</a>
                                     <a class="nav-link active" href="#">Konfigurasi</a>
-                                    <a class="nav-link active" href="?pin=useradmin">User Admin</a>
+                                    <a class="nav-link active" href="admin/useradmin.php">User Admin</a>
 
                                     <a class="nav-link active" href="koneksi/logout.php">Logout</a>
                                 </div>
