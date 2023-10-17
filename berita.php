@@ -24,17 +24,18 @@ include "koneksi/koneksi.php";
                 <!-- <h2>Selamat Datang di Halaman Admin</h2> -->
             </div>
             <div class="card-body bg-body-tertiary">
-                <div class="mb-1 d-flex">
+                <div class="mb-0">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
                         <div class="container">
-                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
                                     <a class="nav-link active" href="index.php">Home</a>
                                     <a class="nav-link active" href="kategori.php">Kategori</a>
                                     <a class="nav-link active" href="berita.php">Berita</a>
                                     <a class="nav-link active" href="konfigurasi.php">Konfigurasi</a>
                                     <a class="nav-link active" href="admin/useradmin.php">User Admin</a>
-
+                                </div>
+                                <div class="out">
                                     <a class="nav-link active" href="koneksi/logout.php">Logout</a>
                                 </div>
                             </div>
