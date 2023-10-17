@@ -43,7 +43,7 @@ include "koneksi/koneksi.php";
                 </div>
             </div>
             <div class="d-flex justify-content-center">
-                <h1>INI HALAMAN HOME ADMIN</h1>
+                <h1>INI HALAMAN BERITA</h1>
             </div>
             <div class="card-footer text-body-secondary">
 

@@ -15,20 +15,28 @@
             <div class="col-md-5">
                 <div class="card">
                     <div class="card-header text-center bg-primary text-white">
-                        <h2>Halaman Login</h2>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col d-flex justify-content-center">
+                                    <img class="m-4" src="../img/de_logo_white.png" width="60%" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <h2>Halaman Login</h2> -->
                     </div>
 
-                    
-                        <?php if (isset($_GET['error'])) { ?>
-                            <div class="alert alert-warning alert-dismissible fade show mt-4 ms-3 me-3" role="alert">
-                                <?= $_GET['error'] ?>
-                                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                            </div>
-                        <?php } ?>
-                    
+
+                    <?php if (isset($_GET['error'])) { ?>
+                        <div class="alert alert-warning alert-dismissible fade show mt-4 ms-3 me-3" role="alert">
+                            <?= $_GET['error'] ?>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                    <?php } ?>
+
 
                     <form action="ceklogin.php" method="post">
                         <div class="card-body">
+
                             <label for="username" class="form-label">Username</label>
                             <div class="input-group mb-3">
                                 <span class="input-group-text" id="basic-addon1"><svg xmlns="http://www.w3.org/2000/svg"
@@ -54,9 +62,9 @@
                                     aria-describedby="passwordHelpBlock" class="form-control" placeholder="password"
                                     aria-label="password" aria-describedby="basic-addon1">
                             </div>
-                            <div class="row mb-3">
-                                <button type="submit" class="btn btn-primary" name="btn_login"
-                                    value="register">Login</button>
+                            <div class="row ms-0 me-0 mb-2 mt-4">
+                                <button type="submit" class="btn btn-primary p-3" name="btn_login"
+                                    value="register"><h5>Login</h5></button>
                             </div>
                             <!-- <div class="text-center">
                                 Belum punya akun, silahkan <a href="../register/daftar.php">Daftar</a>
