@@ -1,4 +1,5 @@
 <?php
+// koneksi database dan session
 include '../../koneksi/koneksi.php';
 include '../../koneksi/session.php';
 ?>
@@ -17,12 +18,16 @@ include '../../koneksi/session.php';
 <body>
     <div class="container">
         <div class="card mt-3">
+
+            <!-- session untuk admin -->
             <div class="card-header">
                 <h2>
                     <?php echo "Selamat Datang " . $_SESSION['username'] . " "; ?>
                 </h2>
                 <!-- <h2>Selamat Datang di Halaman Admin</h2> -->
             </div>
+
+            <!-- navbar menu admin -->
             <div class="card-body bg-body-tertiary">
                 <div class="mb-0">
                     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -30,10 +35,10 @@ include '../../koneksi/session.php';
                             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
                                     <a class="nav-link active" href="../../index.php">Home</a>
-                                    <a class="nav-link active" href="../../kategori.php">Kategori</a>
-                                    <a class="nav-link active" href="../../berita.php">Berita</a>
-                                    <a class="nav-link active" href="../../konfigurasi.php">Konfigurasi</a>
-                                    <a class="nav-link active" href="../../admin/useradmin.php">User Admin</a>
+                                    <a class="nav-link active" href="../../kategori/kategori.php">Kategori</a>
+                                    <a class="nav-link active" href="../../berita/berita.php">Berita</a>
+                                    <a class="nav-link active" href="../../konfigurasi/konfigurasi.php">Konfigurasi</a>
+                                    <a class="nav-link active" href="../useradmin.php">User Admin</a>
                                 </div>
                                 <div class="out">
                                     <a class="nav-link active" href="../../koneksi/logout.php">Logout</a>
@@ -43,6 +48,13 @@ include '../../koneksi/session.php';
                     </nav>
                 </div>
             </div>
+
+            <div class="d-flex justify-content-center mt-3">
+                <h1>USER ADMIN</h1>
+            </div>
+
+            <!-- content menu -->
+            <!-- form isi data admin -->
             <div class="container mt-3">
                 <div class="row">
                     <div class="col-md-8 mx-auto">
@@ -127,11 +139,12 @@ include '../../koneksi/session.php';
                     </div>
                 </div>
             </div>
-        
+            
+            <!-- view database admin -->
             <div class="container mt-5">
                 <div class="row">
                     <div class="col">
-                        <div class="card">
+                        <div class="card mb-3">
                             <div class="card-header bg-primary text-white">
                                 <h4>List User</h4>
                             </div>
@@ -229,13 +242,13 @@ include '../../koneksi/session.php';
                     </div>
                 </div>
             </div>
-            <div class="card-footer text-body-secondary">
 
+            <!-- footer content -->                            
+            <div class="card-footer text-body-secondary text-center">
+                <p>by Maulana Sandi Samudera</p>
             </div>
         </div>
     </div>
-
-
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
