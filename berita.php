@@ -7,15 +7,10 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="src/css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap"
-        rel="stylesheet">
+</head>
 
 <body>
-    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div class="container py-3">
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
                 <img src="src/img/de_logo.png" width="170" alt="">
@@ -47,16 +42,8 @@
 
 
 
-    <section id="hero-section">
-        <div class="container d-flex">
-            <div class="row mt-5">
-                <h1 class="hero1 f-ab">BENCANA</h1>
-                <p class="hero_isi f-pop">Peristiwa atau rangkaian peristiwa yang mengancam dan mengganggu <br>
-                    kehidupan dan penghidupan masyarakat yang disebabkan, baik oleh faktor alam <br>dan/atau
-                    faktor nonalam maupun faktor manusia sehingga mengakibatkan timbulnya <br>korban jiwa
-                    manusia, kerusakan lingkungan, kerugian harta benda, dan dampak psikologis</p>
-            </div>
-        </div>
+    <section id="">
+        <h1>Berita</h1>
     </section>
 
     <footer>
@@ -66,8 +53,6 @@
             </div>
         </div>
     </footer>
-
-
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

@@ -47,16 +47,8 @@
 
 
 
-    <section id="hero-section">
-        <div class="container d-flex">
-            <div class="row mt-5">
-                <h1 class="hero1 f-ab">BENCANA</h1>
-                <p class="hero_isi f-pop">Peristiwa atau rangkaian peristiwa yang mengancam dan mengganggu <br>
-                    kehidupan dan penghidupan masyarakat yang disebabkan, baik oleh faktor alam <br>dan/atau
-                    faktor nonalam maupun faktor manusia sehingga mengakibatkan timbulnya <br>korban jiwa
-                    manusia, kerusakan lingkungan, kerugian harta benda, dan dampak psikologis</p>
-            </div>
-        </div>
+    <section id="">
+        isi berita
     </section>
 
     <footer>
