@@ -30,6 +30,10 @@ section{
     z-index: 1;
 }
 
+.img_view{
+    width: 150px;
+}
+
 .gap-100{
     
 }

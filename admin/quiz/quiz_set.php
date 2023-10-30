@@ -1,7 +1,8 @@
 <?php
 // koneksi database & session
-include "koneksi/session.php";
-include "koneksi/koneksi.php";
+include '../koneksi/session.php';
+include '../koneksi/koneksi.php';
+include 'proses.php';
 ?>
 
 <!doctype html>
@@ -10,7 +11,7 @@ include "koneksi/koneksi.php";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Admin</title>
+    <title>Admin-Quiz</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -18,7 +19,7 @@ include "koneksi/koneksi.php";
 <body>
     <div class="container">
         <div class="card mt-3">
-
+            
             <!-- session untuk admin -->
             <div class="card-header">
                 <h2>
@@ -34,15 +35,15 @@ include "koneksi/koneksi.php";
                         <div class="container">
                             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNavAltMarkup">
                                 <div class="navbar-nav">
-                                    <a class="nav-link active" href="index.php">Home</a>
-                                    <a class="nav-link active" href="kategori/kategori.php">Kategori</a>
-                                    <a class="nav-link active" href="berita/berita.php">Berita</a>
-                                    <a class="nav-link active" href="konfigurasi/konfigurasi.php">Konfigurasi</a>
-                                    <a class="nav-link active" href="akun/admin.php">User Admin</a>
-                                    <a class="nav-link active" href="quiz/quiz_set.php">Quiz</a>
+                                    <a class="nav-link active" href="../index.php">Home</a>
+                                    <a class="nav-link active" href="../kategori/kategori.php">Kategori</a>
+                                    <a class="nav-link active" href="../berita/berita.php">Berita</a>
+                                    <a class="nav-link active" href="../konfigurasi/konfigurasi.php">Konfigurasi</a>
+                                    <a class="nav-link active" href="../akun/admin.php">User Admin</a>
+                                    <a class="nav-link active" href="quiz_set.php">User Admin</a>
                                 </div>
                                 <div class="out">
-                                    <a class="nav-link active" href="koneksi/logout.php">Logout</a>
+                                    <a class="nav-link active" href="../koneksi/logout.php">Logout</a>
                                 </div>
                             </div>
                         </div>
@@ -50,12 +51,11 @@ include "koneksi/koneksi.php";
                 </div>
             </div>
 
-            <!-- content menu -->
-            <div class=" container d-flex justify-content-center my-3 bg-primary text-white">
-                <h1>HOME ADMIN</h1>
+            <div class="d-flex justify-content-center mt-3 bg-primary text-white">
+                <h1>QUIZ</h1>
             </div>
 
-            <!-- footer content -->
+            <!-- footer content -->                            
             <div class="card-footer text-body-secondary text-center">
                 <p>Copyright &copy; 2023, by Maulana Sandi Samudera</p>
             </div>

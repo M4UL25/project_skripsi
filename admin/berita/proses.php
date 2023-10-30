@@ -44,6 +44,23 @@ if (isset($_POST["aksi"])) {
     } else if ($_POST['aksi']== 'ubah'){
         // echo "edit";
         // die();
+        $query_gam = "SELECT * FROM tb_berita WHERE id_berita = '$id_berita'";
+        $sql_gam = mysqli_query($conn, $query_gam);
+        $result = mysqli_fetch_assoc($sql_gam);
+
+        // var_dump($result);
+        // die();
+
+        if($_FILES['gambar']['name']==''){
+            // echo 'kosoong';
+            $gambar = $result['gambar'];
+        } else {
+            // echo 'ada';
+            $gambar = $_FILES['gambar']['name'];
+            unlink("../../src/img/".$result['gambar']);
+            move_uploaded_file($tmpFile, $dir . $gambar);
+        }
+        
 
         // jalannya fungsi
         $sql = "UPDATE tb_berita SET judul = '$judul', isi = '$isi', kategori = '$kategori', gambar = '$gambar', teks = '$teks', terbit = '$terbit' WHERE id_berita = '$id_berita'";
@@ -59,6 +76,16 @@ if (isset($_POST["aksi"])) {
         // die();
         
         $id_berita = mysqli_real_escape_string($conn, $_GET['id']);
+
+        $query_gam = "SELECT * FROM tb_berita WHERE id_berita = '$id_berita'";
+        $sql_gam = mysqli_query($conn, $query_gam);
+        $result = mysqli_fetch_assoc($sql_gam);
+
+        // var_dump($result);
+        // die();
+
+        unlink("../../src/img/".$result['gambar']);
+
         $delete_admin = mysqli_query($conn, "DELETE FROM tb_berita WHERE id_berita = '$id_berita'");
 
         header("Location: berita.php?dlt=Data berhasil dihapus");

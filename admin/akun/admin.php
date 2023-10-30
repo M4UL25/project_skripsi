@@ -40,6 +40,7 @@ include 'proses.php';
                                     <a class="nav-link active" href="../berita/berita.php">Berita</a>
                                     <a class="nav-link active" href="../konfigurasi/konfigurasi.php">Konfigurasi</a>
                                     <a class="nav-link active" href="admin.php">User Admin</a>
+                                    <a class="nav-link active" href="../quiz/quiz_set.php">Quiz</a>
                                 </div>
                                 <div class="out">
                                     <a class="nav-link active" href="../koneksi/logout.php">Logout</a>
@@ -301,7 +302,7 @@ include 'proses.php';
 
             <!-- footer content -->                            
             <div class="card-footer text-body-secondary text-center">
-                <p>by Maulana Sandi Samudera</p>
+                <p>Copyright &copy; 2023, by Maulana Sandi Samudera</p>
             </div>
         </div>
     </div>

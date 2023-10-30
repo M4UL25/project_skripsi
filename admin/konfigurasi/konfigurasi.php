@@ -9,7 +9,7 @@ include "../koneksi/koneksi.php";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Admin-Konfigurasi</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
@@ -35,6 +35,7 @@ include "../koneksi/koneksi.php";
                                     <a class="nav-link active" href="../berita/berita.php">Berita</a>
                                     <a class="nav-link active" href="konfigurasi.php">Konfigurasi</a>
                                     <a class="nav-link active" href="../akun/admin.php">User Admin</a>
+                                    <a class="nav-link active" href="../quiz/quiz_set.php">Quiz</a>
                                 </div>
                                 <div class="out">
                                     <a class="nav-link active" href="../koneksi/logout.php">Logout</a>
@@ -300,7 +301,7 @@ include "../koneksi/koneksi.php";
             </div>
             <!-- footer content -->
             <div class="card-footer text-body-secondary text-center">
-                <p>by Maulana Sandi Samudera</p>
+                <p>Copyright &copy; 2023, by Maulana Sandi Samudera</p>
             </div>
         </div>
     </div>

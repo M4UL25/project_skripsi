@@ -9,7 +9,7 @@ include "../koneksi/koneksi.php";
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Admin-Berita</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
@@ -37,6 +37,7 @@ include "../koneksi/koneksi.php";
                                     <a class="nav-link active" href="berita.php">Berita</a>
                                     <a class="nav-link active" href="../konfigurasi/konfigurasi.php">Konfigurasi</a>
                                     <a class="nav-link active" href="../akun/admin.php">User Admin</a>
+                                    <a class="nav-link active" href="../quiz/quiz_set.php">Quiz</a>
                                 </div>
                                 <div class="out">
                                     <a class="nav-link active" href="../koneksi/logout.php">Logout</a>
@@ -103,7 +104,7 @@ include "../koneksi/koneksi.php";
 
                                         ?>
                                         <form action="proses.php" method="post" enctype="multipart/form-data">
-                                            <input type="hidden" name="id_admin" value="<?= $run['id_berita']?>">
+                                            <input type="hidden" name="id_berita" value="<?= $run['id_berita']?>">
                                             <div class="mb-3 col-4">
                                                 <label class="form-label">Judul</label>
                                                 <input type="text" class="form-control" placeholder="Masukkan Judul"
@@ -116,7 +117,7 @@ include "../koneksi/koneksi.php";
                                                     $hasil = mysqli_query($conn, "SELECT * FROM tb_kategori WHERE terbit='1' ORDER BY id_kategori DESC");
                                                     while ($row = mysqli_fetch_array($hasil)) :
                                                     ?>
-                                                        <option value="<?=$row['alias']?>"><?=$row['kategori']?></option>
+                                                        <option value="<?=$row['alias']?>" <?=$run['kategori']== $row['alias'] ? 'selected':'' ?> ><?=$row['kategori']?></option>
                                                     <?php
                                                     endwhile;
                                                     ?>
@@ -124,13 +125,13 @@ include "../koneksi/koneksi.php";
                                             </div>
                                             <div class="mb-3 col-12">
                                                 <label class="form-label">Isi Berita</label><br>
-                                                <textarea name="isi" id="" cols="100" rows="12" value="<?= $run['isi']?>"></textarea>
+                                                <textarea name="isi" id="editor" cols="100" rows="12"><?= $run['isi']?></textarea>
                                                 <!-- <input id="editor" type="text" class="form-control" placeholder="Masukkan Judul"
                                                     name="isi" > -->
                                             </div>
                                             <div class="mb-3 col-3">
                                                 <label class="form-label">Gambar</label>
-                                                <input type="file" class="form-control" id="gambar" name="gambar" value="<?= $run['gambar']?>">
+                                                <input type="file" class="form-control" id="gambar" accept="image/*" name="gambar" value="<?= $run['gambar']?>">
                                             </div>
                                             <div class="mb-3 col-4">
                                                 <label class="form-label">Teks</label>
@@ -177,7 +178,7 @@ include "../koneksi/koneksi.php";
                                         </div>
                                         <div class="mb-3 col-12">
                                             <label class="form-label">Isi Berita</label><br>
-                                            <textarea name="isi" id="" cols="100" rows="12"></textarea>
+                                            <textarea name="isi" id="editor" cols="100" rows="12"></textarea>
                                             <!-- <input type="text" class="form-control" placeholder="Masukkan Judul"
                                                 name="isi"> -->
                                             <!-- <input id="editor" type="text" class="form-control" placeholder="Masukkan Judul"
@@ -185,7 +186,7 @@ include "../koneksi/koneksi.php";
                                         </div>
                                         <div class="mb-3 col-3">
                                             <label class="form-label">Gambar</label>
-                                            <input type="file" class="form-control" id="gambar" name="gambar">
+                                            <input type="file" class="form-control" accept="image/*" id="gambar" name="gambar">
                                         </div>
                                         <div class="mb-3 col-4">
                                             <label class="form-label">Teks</label>
@@ -239,6 +240,7 @@ include "../koneksi/koneksi.php";
                                         $judul = $data['judul'];
                                         $kategori = $data['kategori'];
                                         $tanggal = $data['tanggal'];
+                                        $gambar = $data['gambar'];
                                         ?>
                                         <tbody>
                                             <td scope="col">
@@ -252,6 +254,9 @@ include "../koneksi/koneksi.php";
                                             </td>
                                             <td scope="col">
                                                 <?= $tanggal ?>
+                                            </td>
+                                            <td scope="col">
+                                                <img src="../../src/img/<?=$gambar?>" style="width: 100px">
                                             </td>
                                             <td scope="col">
                                                 <a href="berita.php?aksi=edit&id=<?= $id_berita ?>"
@@ -269,7 +274,7 @@ include "../koneksi/koneksi.php";
 
             <!-- footer content -->
             <div class="card-footer text-body-secondary text-center">
-                <p>by Maulana Sandi Samudera</p>
+                <p>Copyright &copy; 2023, by Maulana Sandi Samudera</p>
             </div>
 
         </div>
