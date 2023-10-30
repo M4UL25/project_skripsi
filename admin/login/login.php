@@ -20,7 +20,7 @@
                         <div class="container">
                             <div class="row">
                                 <div class="col d-flex justify-content-center">
-                                    <img class="m-4" src="../src/img/de_logo_white.png" width="60%" alt="">
+                                    <img class="m-4" src="../../src/img/de_logo_white.png" width="60%" alt="">
                                 </div>
                             </div>
                         </div>

@@ -36,7 +36,7 @@ include "../../koneksi/koneksi.php";
                                     <a class="nav-link active" href="../../kategori/kategori.php">Kategori</a>
                                     <a class="nav-link active" href="../berita.php">Berita</a>
                                     <a class="nav-link active" href="../../konfigurasi/konfigurasi.php">Konfigurasi</a>
-                                    <a class="nav-link active" href="../../admin/useradmin.php">User Admin</a>
+                                    <a class="nav-link active" href="../../akun/useradmin.php">User Admin</a>
                                 </div>
                                 <div class="out">
                                     <a class="nav-link active" href="../../koneksi/logout.php">Logout</a>
@@ -48,7 +48,7 @@ include "../../koneksi/koneksi.php";
             </div>
 
             <!-- content menu -->
-            <div class="d-flex justify-content-center my-3">
+            <div class="d-flex justify-content-center my-3 bg-primary text-white">
                 <h1>BERITA</h1>
             </div>
 
@@ -72,7 +72,7 @@ include "../../koneksi/koneksi.php";
                                             <form action="" class="">
                                                 <div class="mb-3 col-4">
                                                     <label class="form-label">Judul</label>
-                                                    <input type="text" class="form-control" placeholder="Masukkan Judul" value="<?= $result['judul']?>>
+                                                    <input type="text" class="form-control" placeholder="Masukkan Judul" value="<?= $result['judul']?>">
                                                 </div>
                                                 <div class="mb-3 col-2">
                                                     <label class="form-label">Kategori</label>
@@ -85,7 +85,7 @@ include "../../koneksi/koneksi.php";
                                                 <div class="mb-3 col-12">
                                                     <label class="form-label">Isi Berita</label>
                                                     <input id="editor" type="text" class="form-control"
-                                                        placeholder="Masukkan Judul" value="<?= $result['isi']?>>
+                                                        placeholder="Masukkan Judul" value="<?= $result['isi']?>">
                                                 </div>
                                                 <div class="mb-3 col-3">
                                                     <label class="form-label">Gambar</label>
@@ -93,7 +93,7 @@ include "../../koneksi/koneksi.php";
                                                 </div>
                                                 <div class="mb-3 col-4">
                                                     <label class="form-label">Teks</label>
-                                                    <input type="text" class="form-control" placeholder="" value="<?= $result['teks']?>>
+                                                    <input type="text" class="form-control" placeholder="" value="<?= $result['teks']?>">
                                                 </div>
                                                 <div class="mb-3 col-1">
                                                     <label class="form-label">Terbitkan</label>
@@ -105,6 +105,7 @@ include "../../koneksi/koneksi.php";
                                                 </div>
                                                 <div class="col">
                                                     <input type="submit" class="btn btn-primary" name="tbh_berita" value="Simpan">
+                                                    <a href="../berita.php" class="btn btn-danger">Kembali</a>
                                                 </div>
                                             </form>
 

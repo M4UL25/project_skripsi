@@ -24,7 +24,5 @@ if (isset($_POST['btn_login'])){
             header("location: login.php");
         }
     }
-    
-
 }
 ?>

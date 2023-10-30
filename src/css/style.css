@@ -1,0 +1,54 @@
+section{
+    padding: 50px 0 100px;
+}
+
+/* hero section */
+#hero-section {
+    background-image: url(../img/hero1.jpg);
+    background-size: cover;
+    height: 700px;
+    background-position: 0;
+    position: relative;
+}
+
+#hero-section::after{
+    content: '';
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    opacity: 40%;
+}
+
+#hero-section .row {
+    position: absolute;
+    z-index: 1;
+}
+
+.gap-100{
+    
+}
+
+.f-pop{
+    font-family: 'Poppins', sans-serif;
+}
+
+.f-ab{
+    font-family: 'Archivo Black', sans-serif;
+}
+
+.hero1{
+    font-size: 100px; 
+    color: white;
+}
+
+.hero_isi{
+    font-size: 20px;
+    font-weight: 300;
+    color: white;
+}
