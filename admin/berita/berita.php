@@ -16,7 +16,7 @@ include "../koneksi/koneksi.php";
     <script src="https://cdn.ckeditor.com/ckeditor5/40.0.0/classic/ckeditor.js"></script>
 </head>
 
-<body>
+<body style="background-color: #F6F4EB">
     <div class="container">
         <div class="card mt-3">
             <div class="card-header">

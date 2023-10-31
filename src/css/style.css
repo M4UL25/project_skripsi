@@ -2,6 +2,10 @@ section{
     padding: 50px 0 100px;
 }
 
+body {
+    background-color: #EBF3E8;
+}
+
 /* hero section */
 #hero-section {
     background-image: url(../img/hero1.jpg);
@@ -28,6 +32,10 @@ section{
 #hero-section .row {
     position: absolute;
     z-index: 1;
+}
+
+.my-bg{
+    background-color: #EBF3E8;
 }
 
 .img_view{
