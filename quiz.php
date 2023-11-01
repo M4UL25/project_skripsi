@@ -7,10 +7,16 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
-<nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div class="container py-3">
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
                 <img src="src/img/de_logo.png" width="170" alt="">
@@ -42,9 +48,30 @@
 
 
 
-    <section id="">
-        <h1>Quiz</h1>
-    </section>
+    <div class="container my-5">
+        <h1 class="f-ab d-inline text-bg-primary px-3 rounded-pill">QUIZ</h1>
+        <div class="row mt-5 d-flex justify-content-center">
+            <a class="col-md-5" href="isiquiz.php">
+                <div class="shadow-lg text-center text-bg-primary p-5 rounded">
+                    <h1 class="f-ab">GEOLOGI</h1>
+                </div>
+            </a>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <a class="col-md-5" href="isiquiz.php">
+                <div class="shadow-lg text-center text-bg-primary p-5 rounded">
+                    <h1 class="f-ab">SOSIAL</h1>
+                </div>
+            </a>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <a class="col-md-5" href="isiquiz.php">
+                <div class="shadow-lg text-center text-bg-primary p-5 rounded">
+                    <h1 class="f-ab">BIOLOGI</h1>
+                </div>
+            </a>
+        </div>
+    </div>
 
     <footer>
         <div class="container-fluid bg-primary">

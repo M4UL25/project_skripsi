@@ -46,83 +46,24 @@
         </div>
     </nav>
 
-    <section id="hero-section">
-        <div class="container d-flex">
-            <div class="row mt-5">
-                <div class="col">
-                    <h1 class="hero1 f-ab">BENCANA</h1>
-                    <p class="hero_isi f-pop">Peristiwa atau rangkaian peristiwa yang mengancam dan mengganggu <br>
-                        kehidupan dan penghidupan masyarakat yang disebabkan, baik oleh faktor alam <br>dan/atau
-                        faktor nonalam maupun faktor manusia sehingga mengakibatkan timbulnya <br>korban jiwa
-                        manusia, kerusakan lingkungan, kerugian harta benda, dan dampak psikologis</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <div class="container mt-5">
-        <div class="row">
-            <h2 class="f-ab text-center">Bencana dapat dibagi menjadi beberapa Kategori</h2>
-        </div>
-    </div>
-
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card">
-                    <img style="" src="src/img/eartquake.jpeg" alt="">
-                    <div class="card-body text-center">
-                        <h3 class="f-ab">Geologi</h3>
+        <div class="row d-flex justify-content-center">
+            <div class="col-md-5 d-flex justify-content-center">
+                <div class="card my-5">
+                    <div class="card-header d-flex justify-content-between">
+                        <h1>QUIZ</h1>
+                    </div>
+                    <div class="card-body">
+                        <h5 id="question">Wilayah stabil yaitu wilayah yang tidak pernah mengalami gempa (tidak ada catatan sejarah gempa). Berikut ini yang termasuk wilayah stabil di Indonesia adalah</h5>
+                        <div id="answer-buttons">
+                            <button class="col-md-12 btn btn-secondary my-3">Nusa Tenggara</button>
+                            <button class="col-md-12 btn btn-secondary my-3">Papua</button>
+                            <button class="col-md-12 btn btn-secondary my-3">Jawa</button>
+                            <button class="col-md-12 btn btn-secondary my-3">Kalimantan</button>
+                        </div>
+                        <button id="next-btn" class="px-5 btn btn-primary text-white">Next</button>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img style="" src="src/img/flood.jpeg" alt="">
-                    <div class="card-body text-center">
-                        <h3 class="f-ab">Hidrometeorologi</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img style="" src="src/img/epidemic.jpeg" alt="">
-                    <div class="card-body text-center">
-                        <h3 class="f-ab">Biologi</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img style="" src="src/img/geologi.jpeg" alt="">
-                    <div class="card-body text-center">
-                        <h3 class="f-ab">Kegagalan Teknologi</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img style="" src="src/img/geologi.jpeg" alt="">
-                    <div class="card-body text-center">
-                        <h3 class="f-ab">Lingkungan</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <img style="" src="src/img/geologi.jpeg" alt="">
-                    <div class="card-body text-center">
-                        <h3 class="f-ab">Sosial</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6">
-                <!-- <img style="width: 500px" src="src/img/geologi.jpeg" alt="">    -->
-            </div>
-            <div class="col-md-6">
-                ini isi
             </div>
         </div>
     </div>
@@ -135,7 +76,7 @@
         </div>
     </footer>
 
-
+    <script src="src/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
         crossorigin="anonymous"></script>

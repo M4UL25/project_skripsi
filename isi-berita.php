@@ -1,3 +1,7 @@
+<?php
+include("admin/koneksi/koneksi.php");
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -13,6 +17,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Poppins:wght@100;200;300;400;500;600;800;900&display=swap"
         rel="stylesheet">
+</head>
 
 <body>
     <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
@@ -45,11 +50,89 @@
         </div>
     </nav>
 
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
 
+                <?php
 
-    <section id="">
-        isi berita
-    </section>
+                $id = (isset($_GET['id']) ? $_GET['id'] : '');
+                $sql = mysqli_query($conn, "SELECT * FROM tb_berita WHERE terbit = '1' AND id_berita = '$id'");
+                while ($row = mysqli_fetch_array($sql)):
+                    extract($row);
+
+                    $upview = mysqli_query($conn, "UPDATE tb_berita SET view = view+1 WHERE id_berita = '$id'");
+                    ?>
+                    <div class="card my-3">
+                        <h1 class="ms-3"><strong>
+                                <?= $judul ?>
+                            </strong></h1>
+
+                        <div class="info ms-3">
+                            <span>
+                                Tanggal:
+                                <?= $tanggal ?> |
+                                Update by:
+                                <?= $author ?>
+                            </span>
+                        </div>
+                        <img src="src/img/<?= $gambar ?>" alt="">
+                        <div class="card-body">
+                            <!-- judul -->
+                            <p>
+                                <?= nl2br($isi) ?>
+                            </p>
+                        </div>
+                        <div class="card-footer">
+
+                        </div>
+                    </div>
+
+                    <?php
+                endwhile;
+                ?>
+
+            </div>
+            <div class="col-md-4">
+                <div class="bg-primary text-white py-1 rounded mt-3">
+                    <div class="ms-3">
+                        <strong>Popular News</strong>
+                    </div>
+                </div>
+
+                <?php
+                $pop = mysqli_query($conn, "SELECT * FROM tb_berita WHERE terbit = '1' ORDER BY view DESC LIMIT 0,10");
+
+                while ($run = mysqli_fetch_array($pop)):
+                    extract($run);
+                    ?>
+                    <a href="isi-berita.php?aksi=klik&id=<?= $id_berita ?>" style="text-decoration:none">
+                        <div class="card my-3">
+                            <img src="src/img/<?= $gambar ?>" alt="">
+                            <div class="card-body">
+                                <!-- judul -->
+                                <span>
+                                    <?= substr($tanggal, 0, 10) ?> | view:
+                                    <?= $view ?>
+                                </span>
+                                <h4><strong>
+                                        <?= $judul ?>
+                                    </strong></h4>
+                                <p>
+                                    <?= substr(strip_tags($isi), 0, 200) ?>
+                                </p>
+                            </div>
+                            <div class="card-footer">
+
+                            </div>
+                        </div>
+                    </a>
+                    <?php
+                endwhile;
+                ?>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="container-fluid bg-primary">
