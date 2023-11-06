@@ -40,7 +40,7 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
                         aria-label="Search">
-                    <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
+                    <button class="btn btn-outline-success rounded-pill" name="open" value="cari" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -68,6 +68,27 @@
             <a class="col-md-5" href="isiquiz.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
                     <h1 class="f-ab">BIOLOGI</h1>
+                </div>
+            </a>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <a class="col-md-5" href="isiquiz.php">
+                <div class="shadow-lg text-center text-bg-primary p-5 rounded">
+                    <h1 class="f-ab">Kegagalan Teknologi</h1>
+                </div>
+            </a>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <a class="col-md-5" href="isiquiz.php">
+                <div class="shadow-lg text-center text-bg-primary p-5 rounded">
+                    <h1 class="f-ab">Lingkungan</h1>
+                </div>
+            </a>
+        </div>
+        <div class="row mt-5 d-flex justify-content-center">
+            <a class="col-md-5" href="isiquiz.php">
+                <div class="shadow-lg text-center text-bg-primary p-5 rounded">
+                    <h1 class="f-ab">Sosial</h1>
                 </div>
             </a>
         </div>

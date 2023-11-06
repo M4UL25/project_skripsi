@@ -37,10 +37,9 @@
                         </a>
                     </div>
                 </div>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
-                        aria-label="Search">
-                    <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
+                <form class="d-flex" method="GET">
+                    <input type="text" class="form-control me-2 rounded-pill" name="key" placeholder="Cari....">
+                    <button class="btn btn-outline-success rounded-pill" name="open" value="cari" type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -68,7 +67,7 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card">
                     <img style="" src="src/img/eartquake.jpeg" alt="">
                     <div class="card-body text-center">
@@ -76,7 +75,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card">
                     <img style="" src="src/img/flood.jpeg" alt="">
                     <div class="card-body text-center">
@@ -84,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card">
                     <img style="" src="src/img/epidemic.jpeg" alt="">
                     <div class="card-body text-center">
@@ -92,7 +91,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card">
                     <img style="" src="src/img/geologi.jpeg" alt="">
                     <div class="card-body text-center">
@@ -100,7 +99,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card">
                     <img style="" src="src/img/geologi.jpeg" alt="">
                     <div class="card-body text-center">
@@ -108,7 +107,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-4 mb-3">
                 <div class="card">
                     <img style="" src="src/img/geologi.jpeg" alt="">
                     <div class="card-body text-center">
