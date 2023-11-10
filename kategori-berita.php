@@ -63,14 +63,15 @@ include 'admin/koneksi/koneksi.php';
                 $id = $row['id_kategori'];
                 ?>
                 <div class="col-sm-1 d-flex justify-content-center">
-                    <a href="kategori-berita.php?id=<?=$id?>" class="text-white" style="text-decoration:none; text-transform:capitalize">
+                    <a href="kategori-berita.php?id=<?= $id ?>" class="text-white"
+                        style="text-decoration:none; text-transform:capitalize">
                         <?= $kategori ?>
                     </a>
                 </div>
                 <?php
             endwhile;
             ?>
-            
+
         </div>
     </div>
     <div class="container mt-5">
@@ -92,9 +93,9 @@ include 'admin/koneksi/koneksi.php';
                     $sql = mysqli_query($conn, "SELECT * FROM tb_berita WHERE terbit = '1' AND kategori = '$alias' ORDER BY id_berita DESC LIMIT 0,10");
                     while ($row = mysqli_fetch_array($sql)):
                         extract($row);
-    
+
                         // $result = mysqli_fetch_assoc($sql);
-                    
+                
                         $id_berita = $row["id_berita"];
                         $judul = $row['judul'];
                         $kategori = $row['kategori'];
@@ -105,7 +106,7 @@ include 'admin/koneksi/koneksi.php';
                         $author = $row['author'];
                         $tanggal = $row['tanggal'];
                         $view = $row['view'];
-    
+
                         ?>
                         <a href="isi-berita.php?aksi=klik&id=<?= $id_berita ?>" style="text-decoration:none">
                             <div class="card my-3">
@@ -120,14 +121,14 @@ include 'admin/koneksi/koneksi.php';
                                     </p>
                                 </div>
                                 <div class="card-footer">
-    
+
                                 </div>
                             </div>
                         </a>
-    
+
                         <?php
                     endwhile;
-                    
+
                 endwhile;
 
                 ?>
@@ -140,17 +141,20 @@ include 'admin/koneksi/koneksi.php';
                 </div>
 
                 <?php
-                    $pop = mysqli_query($conn, "SELECT * FROM tb_berita WHERE terbit = '1' ORDER BY view DESC LIMIT 0,10");
+                $pop = mysqli_query($conn, "SELECT * FROM tb_berita WHERE terbit = '1' ORDER BY view DESC LIMIT 0,10");
 
-                    while ($run = mysqli_fetch_array($pop)):
-                        extract($run);
-                ?>
+                while ($run = mysqli_fetch_array($pop)):
+                    extract($run);
+                    ?>
                     <a href="isi-berita.php?aksi=klik&id=<?= $id_berita ?>" style="text-decoration:none">
                         <div class="card my-3">
                             <img src="src/img/<?= $gambar ?>" alt="">
                             <div class="card-body">
                                 <!-- judul -->
-                                <span><?= substr($tanggal, 0,10) ?> | view: <?= $view ?></span>
+                                <span>
+                                    <?= substr($tanggal, 0, 10) ?> | view:
+                                    <?= $view ?>
+                                </span>
                                 <h4><strong>
                                         <?= $judul ?>
                                     </strong></h4>
@@ -163,16 +167,46 @@ include 'admin/koneksi/koneksi.php';
                             </div>
                         </div>
                     </a>
-                <?php
-                    endwhile;
+                    <?php
+                endwhile;
                 ?>
             </div>
         </div>
     </div>
     <footer>
         <div class="container-fluid bg-primary">
-            <div class="row text-center text-white">
-                <p class="mt-3">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+            <div class="container d-flex justify-content-between pt-sm-3 pb-sm-5">
+                <div class="col">
+                    <div class="col">
+                        <p class="mt-3 text-white">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+                    </div>
+                    <div class="col pt-sm-3">
+                        <img src="src/img/de_logo_white.png" width="300px">
+                    </div>
+                </div>
+                <div class="col">
+                    <?php
+                    $tampil = mysqli_query($conn, "SELECT * FROM tb_konfigurasi ORDER BY id_konfi DESC");
+                    while ($konpi = mysqli_fetch_array($tampil)):
+                        $id_konfi = $konpi['id_konfi'];
+                        $nama_konfi = $konpi['nama_konfi'];
+                        $isi_konfi = $konpi['isi_konfi'];
+                        $link = $konpi['link'];
+                        ?>
+                        <div class="col text-white">
+                            <a class="text-white" href="<?= $link ?>"
+                                style="text-decoration:none; text-transform:capitalize">
+                                <?= $nama_konfi ?>
+                            </a>
+                            <p>
+                                <?= $isi_konfi ?>
+                            </p>
+                        </div>
+
+                        <?php
+                    endwhile;
+                    ?>
+                </div>
             </div>
         </div>
     </footer>

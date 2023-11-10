@@ -1,3 +1,7 @@
+<?php
+include 'admin/koneksi/koneksi.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -40,7 +44,8 @@
                 <form class="d-flex" role="search">
                     <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
                         aria-label="Search">
-                    <button class="btn btn-outline-success rounded-pill" name="open" value="cari" type="submit">Search</button>
+                    <button class="btn btn-outline-success rounded-pill" name="open" value="cari"
+                        type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -51,7 +56,7 @@
     <div class="container my-5">
         <h1 class="f-ab d-inline text-bg-primary px-3 rounded-pill">QUIZ</h1>
         <div class="row mt-5 d-flex justify-content-center">
-            <a class="col-md-5" href="isiquiz.php">
+            <a class="col-md-5" href="tes.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
                     <h1 class="f-ab">GEOLOGI</h1>
                 </div>
@@ -96,8 +101,38 @@
 
     <footer>
         <div class="container-fluid bg-primary">
-            <div class="row text-center text-white">
-                <p class="mt-3">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+            <div class="container d-flex justify-content-between pt-sm-3 pb-sm-5">
+                <div class="col">
+                    <div class="col">
+                        <p class="mt-3 text-white">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+                    </div>
+                    <div class="col pt-sm-3">
+                        <img src="src/img/de_logo_white.png" width="300px">
+                    </div>
+                </div>
+                <div class="col">
+                    <?php
+                    $tampil = mysqli_query($conn, "SELECT * FROM tb_konfigurasi ORDER BY id_konfi DESC");
+                    while ($konpi = mysqli_fetch_array($tampil)):
+                        $id_konfi = $konpi['id_konfi'];
+                        $nama_konfi = $konpi['nama_konfi'];
+                        $isi_konfi = $konpi['isi_konfi'];
+                        $link = $konpi['link'];
+                        ?>
+                        <div class="col text-white">
+                            <a class="text-white" href="<?= $link ?>"
+                                style="text-decoration:none; text-transform:capitalize">
+                                <?= $nama_konfi ?>
+                            </a>
+                            <p>
+                                <?= $isi_konfi ?>
+                            </p>
+                        </div>
+
+                        <?php
+                    endwhile;
+                    ?>
+                </div>
             </div>
         </div>
     </footer>

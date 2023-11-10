@@ -1,3 +1,7 @@
+<?php
+include 'admin/koneksi/koneksi.php';
+?>
+
 <!doctype html>
 <html lang="en">
 
@@ -39,7 +43,8 @@
                 </div>
                 <form class="d-flex" method="GET">
                     <input type="text" class="form-control me-2 rounded-pill" name="key" placeholder="Cari....">
-                    <button class="btn btn-outline-success rounded-pill" name="open" value="cari" type="submit">Search</button>
+                    <button class="btn btn-outline-success rounded-pill" name="open" value="cari"
+                        type="submit">Search</button>
                 </form>
             </div>
         </div>
@@ -59,13 +64,39 @@
         </div>
     </section>
 
-    <div class="container mt-5">
-        <div class="row">
-            <h2 class="f-ab text-center">Bencana dapat dibagi menjadi beberapa Kategori</h2>
+    <div class="container-fluid pt-5" style="background-color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6 f-ab mt-5">
+                    <h2 class="mt-5">Indonesia berada pada posisi</h2>
+                    <div class="col f-ab" style="text-transform: capitalize">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">
+                                <h5>lempeng australia</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <h5>lempeng pasifik</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <h5>lempeng eurasia</h5>
+                            </li>
+                            <li class="list-group-item">
+                                <h5>lempeng filipina</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <img src="src/img/map.jpg" width="700px">
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="container mt-5">
+        <div class="row mb-3">
+            <h2 class="f-ab text-center">Bencana dapat dibagi menjadi beberapa Kategori</h2>
+        </div>
         <div class="row">
             <div class="col-md-4 mb-3">
                 <div class="card">
@@ -93,7 +124,7 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
-                    <img style="" src="src/img/geologi.jpeg" alt="">
+                    <img style="" src="src/img/kegagalan-teknologi.jpeg" alt="">
                     <div class="card-body text-center">
                         <h3 class="f-ab">Kegagalan Teknologi</h3>
                     </div>
@@ -101,7 +132,7 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
-                    <img style="" src="src/img/geologi.jpeg" alt="">
+                    <img style="" src="src/img/lingkungan.jpeg" alt="">
                     <div class="card-body text-center">
                         <h3 class="f-ab">Lingkungan</h3>
                     </div>
@@ -109,27 +140,120 @@
             </div>
             <div class="col-md-4 mb-3">
                 <div class="card">
-                    <img style="" src="src/img/geologi.jpeg" alt="">
+                    <img style="" src="src/img/sosial.jpeg" alt="">
                     <div class="card-body text-center">
                         <h3 class="f-ab">Sosial</h3>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col-md-6">
-                <!-- <img style="width: 500px" src="src/img/geologi.jpeg" alt="">    -->
+    </div>
+
+    <div class="container-fluid bg-white">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 d-flex align-items-center">
+                    <div class="col-md-10 mt-3">
+                        <h1 class="f-ab">MITIGASI</h1>
+                        <p class="f-pop">Menurut UU No. 1 Tahun 2014, mitigasi bencana didefinisikan sebagai upaya untuk
+                            mengurangi risiko
+                            bencana, baik secara struktur atau fisik yaitu melalui pembangunan fisik alami dan/atau
+                            buatan
+                            maupun non struktur atau nonfisik melalui peningkatan kemampuan menghadapi ancaman bencana
+                            di
+                            Wilayah Pesisir dan Pulau-Pulau Kecil (WP3K). </p>
+
+                        <p class="f-pop">Tujuan dari Mitigasi</p>
+                        <ol class="list-group-numbered f-pop">
+                            <li class="list-group-item">Meminimalisir adanya korban jiwa akibat bencana.</li>
+                            <li class="list-group-item">Meminimalisir kerugian yang diakibatkan oleh bencana.</li>
+                            <li class="list-group-item">Meminimalisir kerusakan pada sumber daya alam (SDA).</li>
+                            <li class="list-group-item">Sebagai pedoman pemerintah dalam merencanakan pembangunan di
+                                masa depan.</li>
+                            <li class="list-group-item">Meningkatkan kesadaran masyarakat mengenai resiko dan dampak
+                                dari adanya bencana.</li>
+                            <li class="list-group-item">Membuat masyarakat merasa lebih nyaman dan juga aman.</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <img src="src/img/mitigasi.webp" width="900px">
+                </div>
             </div>
-            <div class="col-md-6">
-                ini isi
+        </div>
+    </div>
+
+    <div class="container-fluid my-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1 class="f-ab">Partisipasi Masyarakat dalam Mitigasi Bencana</h1>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col-md-4">
+                    <h3 class="f-ab text-center">Pra-Bencana</h3>
+                    <ul>
+                        <li>Menganalisis risiko bencana;</li>
+                        <li>Melakukan penelitian terkait kebencanaan;</li>
+                        <li>Pelatihan atau pendidikan mengenai kebencanaan;</li>
+                        <li>Membentuk atau bergabung dalam organisasi tanggap bencana.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="f-ab text-center">Saat Bencana</h3>
+                    <ul>
+                        <li>Diharapkan masyarakat dapat melakukan evakuasi mandiri sebelum bantuan datang;</li>
+                        <li>Segera menginformasikan ke instansi terkait, seperti umumnya BNPB;</li>
+                        <li>Merespons tanggap darurat, membantu masyarakat lainnya sesuai keahlian masing-masing.</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="f-ab text-center">Pasca-Bencana</h3>
+                    <ul>
+                        <li>Mengerahkan relawan beserta dengan dukungan logistik, peralatan evakuasi, serta pemenuhan kebutuhan dasar, </li>
+                        <li>Melakukan rehabilitasi, dan normalisasi, kegiatan layanan publik,</li>
+                        <li>Rekonstruksi, pembangunan kembali sarana prasarana, serta kelembagaan dan instansi terkait.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
 
     <footer>
         <div class="container-fluid bg-primary">
-            <div class="row text-center text-white">
-                <p class="mt-3">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+            <div class="container d-flex justify-content-between pt-sm-3 pb-sm-5">
+                <div class="col">
+                    <div class="col">
+                        <p class="mt-3 text-white">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+                    </div>
+                    <div class="col pt-sm-3">
+                        <img src="src/img/de_logo_white.png" width="300px">
+                    </div>
+                </div>
+                <div class="col">
+                    <?php
+                    $tampil = mysqli_query($conn, "SELECT * FROM tb_konfigurasi ORDER BY id_konfi DESC");
+                    while ($konpi = mysqli_fetch_array($tampil)):
+                        $id_konfi = $konpi['id_konfi'];
+                        $nama_konfi = $konpi['nama_konfi'];
+                        $isi_konfi = $konpi['isi_konfi'];
+                        $link = $konpi['link'];
+                        ?>
+                        <div class="col text-white">
+                            <a class="text-white" href="<?= $link ?>"
+                                style="text-decoration:none; text-transform:capitalize">
+                                <?= $nama_konfi ?>
+                            </a>
+                            <p>
+                                <?= $isi_konfi ?>
+                            </p>
+                        </div>
+
+                        <?php
+                    endwhile;
+                    ?>
+                </div>
             </div>
         </div>
     </footer>

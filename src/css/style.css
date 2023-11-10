@@ -64,3 +64,12 @@ body {
 .img-geo{
     width: 1000px;
 }
+
+.tek-dec{
+    text-transform: uppercase;
+}
+
+.box{
+    text-decoration: none;
+    text-transform:capitalize;
+}

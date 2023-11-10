@@ -84,9 +84,9 @@ include 'admin/koneksi/koneksi.php';
                 </div>
 
                 <?php
-                if(isset($_GET['key'])){
-                    $sql = mysqli_query($conn, "SELECT * FROM tb_berita WHERE judul LIKE '%".$_GET['key']."%' OR isi LIKE '%".$_GET['key']."%'");
-                    
+                if (isset($_GET['key'])) {
+                    $sql = mysqli_query($conn, "SELECT * FROM tb_berita WHERE judul LIKE '%" . $_GET['key'] . "%' OR isi LIKE '%" . $_GET['key'] . "%'");
+
                 } else {
 
                     $sql = mysqli_query($conn, "SELECT * FROM tb_berita WHERE terbit = '1' ORDER BY id_berita DESC LIMIT 0,10");
@@ -172,8 +172,38 @@ include 'admin/koneksi/koneksi.php';
     </div>
     <footer>
         <div class="container-fluid bg-primary">
-            <div class="row text-center text-white">
-                <p class="mt-3">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+            <div class="container d-flex justify-content-between pt-sm-3 pb-sm-5">
+                <div class="col">
+                    <div class="col">
+                        <p class="mt-3 text-white">Copyright &copy; 2023, by Maulana Sandi Samudera</p>
+                    </div>
+                    <div class="col pt-sm-3">
+                        <img src="src/img/de_logo_white.png" width="300px">
+                    </div>
+                </div>
+                <div class="col">
+                    <?php
+                    $tampil = mysqli_query($conn, "SELECT * FROM tb_konfigurasi ORDER BY id_konfi DESC");
+                    while ($konpi = mysqli_fetch_array($tampil)):
+                        $id_konfi = $konpi['id_konfi'];
+                        $nama_konfi = $konpi['nama_konfi'];
+                        $isi_konfi = $konpi['isi_konfi'];
+                        $link = $konpi['link'];
+                        ?>
+                        <div class="col text-white">
+                            <a class="text-white" href="<?= $link ?>"
+                                style="text-decoration:none; text-transform:capitalize">
+                                <?= $nama_konfi ?>
+                            </a>
+                            <p>
+                                <?= $isi_konfi ?>
+                            </p>
+                        </div>
+
+                        <?php
+                    endwhile;
+                    ?>
+                </div>
             </div>
         </div>
     </footer>
