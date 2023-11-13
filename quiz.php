@@ -56,44 +56,44 @@ include 'admin/koneksi/koneksi.php';
     <div class="container my-5">
         <h1 class="f-ab d-inline text-bg-primary px-3 rounded-pill">QUIZ</h1>
         <div class="row mt-5 d-flex justify-content-center">
-            <a class="col-md-5" href="tes.php">
+            <a class="col-md-5" href="quiz/geologi.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
                     <h1 class="f-ab">GEOLOGI</h1>
                 </div>
             </a>
         </div>
         <div class="row mt-5 d-flex justify-content-center">
-            <a class="col-md-5" href="isiquiz.php">
+            <a class="col-md-5" href="quiz/sosial.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
                     <h1 class="f-ab">SOSIAL</h1>
                 </div>
             </a>
         </div>
         <div class="row mt-5 d-flex justify-content-center">
-            <a class="col-md-5" href="isiquiz.php">
+            <a class="col-md-5" href="quiz/biologi.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
                     <h1 class="f-ab">BIOLOGI</h1>
                 </div>
             </a>
         </div>
         <div class="row mt-5 d-flex justify-content-center">
-            <a class="col-md-5" href="isiquiz.php">
+            <a class="col-md-5" href="quiz/kegagalan-teknologi.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
                     <h1 class="f-ab">Kegagalan Teknologi</h1>
                 </div>
             </a>
         </div>
         <div class="row mt-5 d-flex justify-content-center">
-            <a class="col-md-5" href="isiquiz.php">
+            <a class="col-md-5" href="quiz/lingkungan.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
                     <h1 class="f-ab">Lingkungan</h1>
                 </div>
             </a>
         </div>
         <div class="row mt-5 d-flex justify-content-center">
-            <a class="col-md-5" href="isiquiz.php">
+            <a class="col-md-5" href="quiz/hidrometeorologi.php">
                 <div class="shadow-lg text-center text-bg-primary p-5 rounded">
-                    <h1 class="f-ab">Sosial</h1>
+                    <h1 class="f-ab">Hidrometeorologi</h1>
                 </div>
             </a>
         </div>
