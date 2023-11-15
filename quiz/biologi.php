@@ -1,177 +1,210 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz App with Bootstrap</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <title>Kuis Interaktif</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f4;
+            margin: 20px;
+            background-color: #EBF3E8;
         }
 
-        #quiz-container {
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        .card {
+            max-width: 600px;
+            margin: auto;
+            margin-top: 10%;
+            background-color: #ffffff;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .quiz-container {
             padding: 20px;
-            width: 400px;
         }
 
-        h2 {
-            text-align: center;
-        }
-
-        .question {
-            margin-bottom: 20px;
-        }
-
-        .options {
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-        }
-
-        .option-btn {
-            background-color: #3498db;
-            border: none;
-            color: #fff;
-            padding: 10px 20px;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .option-btn:hover {
-            background-color: #2980b9;
-        }
-
-        #result {
-            text-align: center;
+        .result {
+            font-weight: bold;
             margin-top: 20px;
-            display: none;
         }
 
-        #exit-btn {
-            background-color: #e74c3c;
+        .btn-answer {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        .btn-exit {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .exit-container {
+            text-align: center;
         }
     </style>
 </head>
+
 <body>
 
-<div id="quiz-container" class="container">
-    <h2 class="mb-4">Quiz Biologi</h2>
-    <div id="question" class="question"></div>
-    <div id="options" class="options"></div>
-    <button class="option-btn mt-3" onclick="checkAnswer()">Next</button>
-    <div id="result"></div>
-    <!-- <a href="/quiz.php" id="exit-btn" class="option-btn" onclick="exitQuiz() >Exit</a> -->
-    <button id="exit-btn" class="option-btn" onclick="exitQuiz() ">Exit</button>
-</div>
+    <div class="card">
+        <div class="card-body quiz-container row">
+            <!-- Input nama -->
+            <div id="name-input" class="mb-3">
+                <h2 class="mb-4">Quiz Biologi</h2>
+                <label for="inputName" class="form-label">Masukkan Nama Anda:</label>
+                <input type="text" class="form-control" id="inputName">
+                <button class="btn btn-primary mt-2" onclick="startQuiz()">Mulai Kuis</button>
+                <a href="../quiz.php" class="btn btn-danger mt-2">Keluar</a>
+            </div>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-<script>
-    // Question data
-    const questions = [
-        {
-            question: "Yang termasuk bencana biologi?",
-            options: ["Wabah", "Konflik", "Tsunami", "Gempa"],
-            correctAnswer: "Wabah"
-        },
-        {
-            question: " Faktor penyebab wilayah Indoensia sering dilanda gempa adalah...",
-            options: ["Hutan di Indonesia sudah gundul", "Dilalui dua pegunungan lipatan muda", "Terletak diantara dua samudera", "Tempat bertemunya tiga lempeng litosfer"],
-            correctAnswer: "Tempat bertemunya tiga lempeng litosfer"
-        },
-        {
-            question: "Beberapa pulau di Indonesia tercatat sebagai pulau yang rawan gempa lantaran akrab dengan sentra gempa. Namun ada pula pulau yang cukup kondusif lantaran jauh dari sentra gempa. Salah satu pulau di Indonesia yang jauh dari sentra gempa adalah...",
-            options: ["Kalimantan", "Jawa", "Sulawesi", "Sumatera"],
-            correctAnswer: "Kalimantan"
-        },
-        {
-            question: "Gempa bumi yang terjadi karena aktivitas meletusnya gunung berapi adalah..",
-            options: ["Vulkanik", "Tektonik", "Tumbukan", "Runtuhan"],
-            correctAnswer: "Vulkanik"
-        },
-        {
-            question: "Gempa bumi sanggup menjadikan kerusakan yang bervariasi tergantung pada kekuatan gempa tersebut. Alat yang dipakai untuk mencatat kekuatan gempa adalah...",
-            options: ["Seismograf", "Altimeter", "Anemometer", "Termograf"],
-            correctAnswer: "Seismograf"
-        },
-        // Add more questions as needed
-    ];
+            <!-- Kuis container (akan muncul setelah input nama) -->
+            <div id="quiz" class="" style="display: none;">
+                <!-- Soal dan jawaban -->
+            </div>
 
-    // Variables
-    let currentQuestionIndex = 0;
-    let score = 0;
-    const questionElement = document.getElementById("question");
-    const optionsElement = document.getElementById("options");
-    const resultElement = document.getElementById("result");
+            <!-- Hasil Skor -->
+            <div id="results" class="result"></div>
 
-    // Function to display the current question
-    function displayQuestion() {
-        const currentQuestion = questions[currentQuestionIndex];
-        questionElement.textContent = currentQuestion.question;
+            <!-- Tombol Exit -->
+            <div class="exit-container col-sm-4">
+                <button id="exitBtn" class="btn btn-danger btn-exit" onclick="exitQuiz()"
+                    style="display: none;">Keluar</button>
+            </div>
+        </div>
+    </div>
 
-        optionsElement.innerHTML = "";
-        currentQuestion.options.forEach((option) => {
-            const btn = document.createElement("button");
-            btn.textContent = option;
-            btn.classList.add("btn", "btn-primary", "option-btn");
-            btn.onclick = () => checkAnswer(option);
-            optionsElement.appendChild(btn);
-        });
-    }
+    <!-- Bootstrap JS dan Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        var currentQuestionIndex = 0;
+        var score = 0;
+        var playerName = "";
 
-    // Function to check the selected answer
-    function checkAnswer(selectedOption) {
-        const currentQuestion = questions[currentQuestionIndex];
+        var questions = [
+            {
+                question: "Yang termasuk bencana biologi?",
+                answers: [
+                    { text: "Konflik", correct: false },
+                    { text: "Gempa", correct: false },
+                    { text: "Tsunami", correct: false },
+                    { text: "Wabah", correct: true }
+                ]
+            },
+            {
+                question: "Faktor penyebab wilayah Indoensia sering dilanda gempa adalah...",
+                answers: [
+                    { text: "Hutan di Indonesia sudah gundul", correct: false },
+                    { text: "Tempat bertemunya tiga lempeng litosfer", correct: true },
+                    { text: "Dilalui dua pegunungan lipatan muda", correct: false },
+                    { text: "Terletak diantara dua samudera", correct: false }
+                ]
+            },
+            {
+                question: "Beberapa pulau di Indonesia tercatat sebagai pulau yang rawan gempa lantaran akrab dengan sentra gempa. Namun ada pula pulau yang cukup kondusif lantaran jauh dari sentra gempa. Salah satu pulau di Indonesia yang jauh dari sentra gempa adalah...",
+                answers: [
+                    { text: "Jawa", correct: false },
+                    { text: "Kalimantan", correct: true },
+                    { text: "Sulawesi", correct: false },
+                    { text: "Sumatera", correct: false }
+                ]
+            },
+            {
+                question: "Gempa bumi yang terjadi karena aktivitas meletusnya gunung berapi adalah..",
+                answers: [
+                    { text: "Tektonik", correct: false },
+                    { text: "Vulkanik", correct: true },
+                    { text: "Tumbukan", correct: false },
+                    { text: "Runtuhan", correct: false }
+                ]
+            },
+            {
+                question: "Gempa bumi sanggup menjadikan kerusakan yang bervariasi tergantung pada kekuatan gempa tersebut. Alat yang dipakai untuk mencatat kekuatan gempa adalah...",
+                answers: [
+                    { text: "Altimeter", correct: false },
+                    { text: "Seismograf", correct: true },
+                    { text: "Anemometer", correct: false },
+                    { text: "Termograf", correct: false }
+                ]
+            },
+            // Tambahkan soal dan jawaban lainnya sesuai kebutuhan
+        ];
 
-        if (selectedOption === currentQuestion.correctAnswer) {
-            score++;
+        function startQuiz() {
+            playerName = document.getElementById("inputName").value;
+            if (playerName.trim() === "") {
+                alert("Masukkan nama Anda terlebih dahulu.");
+                return;
+            }
+
+            var shuffledQuestions = shuffle(questions);
+            showQuestion(shuffledQuestions[currentQuestionIndex]);
+
+            document.getElementById("name-input").style.display = "none";
+            document.getElementById("quiz").style.display = "block";
+            document.getElementById("exitBtn").style.display = "block";
         }
 
-        currentQuestionIndex++;
-
-        if (currentQuestionIndex < questions.length) {
-            displayQuestion();
-        } else {
-            showResult();
+        function shuffle(array) {
+            return array.sort(() => Math.random() - 0.5);
         }
-    }
 
-    // Function to display the quiz result
-    function showResult() {
-        resultElement.innerHTML = `<p class="lead">Your score is: ${score} out of ${questions.length}</p>`;
-        optionsElement.innerHTML = "";
-        questionElement.textContent = "";
-        resultElement.style.display = "block";
-    }
+        function showQuestion(question) {
+            var quizContainer = document.getElementById("quiz");
+            quizContainer.innerHTML = "";
 
-    // Function to exit the quiz
-    function exitQuiz() {
-        alert("Quiz exited!");
-        window.location.href = "../quiz.php";
-        // resetQuiz();
-    }
+            var questionElement = document.createElement("div");
+            questionElement.className = "mb-3";
+            questionElement.innerText = question.question;
+            quizContainer.appendChild(questionElement);
 
-    // Function to reset the quiz
-    function resetQuiz() {
-        currentQuestionIndex = 0;
-        score = 0;
-        resultElement.style.display = "none";
-        displayQuestion();
-    }
+            var shuffledAnswers = shuffle(question.answers);
 
-    // Initial display
-    displayQuestion();
-</script>
+            shuffledAnswers.forEach(function (answer) {
+                var button = document.createElement("button");
+                button.innerText = answer.text;
+                button.className = "btn btn-primary btn-answer";
+                button.addEventListener("click", function () {
+                    selectAnswer(answer, shuffledAnswers);
+                });
+                quizContainer.appendChild(button);
+            });
+        }
+
+        function selectAnswer(selectedAnswer, shuffledAnswers) {
+            if (selectedAnswer.correct) {
+                score++;
+            }
+
+            currentQuestionIndex++;
+            if (currentQuestionIndex < questions.length) {
+                showQuestion(questions[currentQuestionIndex]);
+            } else {
+                endQuiz();
+            }
+        }
+
+        function endQuiz() {
+            var quizContainer = document.getElementById("quiz");
+            quizContainer.innerHTML = "";
+
+            var resultsContainer = document.getElementById("results");
+            resultsContainer.innerHTML = "<h2 class='text-center m'>Hasil Kuis</h2>";
+            resultsContainer.innerHTML += "<h2 style='text-transform: capitalize'>Nama: " + playerName + "</h2>";
+            resultsContainer.innerHTML += "<h2>Skor Anda: <strong> " + score + "/" + questions.length + "</strong> </h2>";
+        }
+
+        function exitQuiz() {
+            var confirmExit = confirm("Apakah Anda yakin ingin keluar dari kuis?");
+            if (confirmExit) {
+                window.location.href = "../quiz.php";
+            }
+        }
+    </script>
 
 </body>
+
 </html>

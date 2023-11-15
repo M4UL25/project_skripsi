@@ -42,7 +42,7 @@ include 'admin/koneksi/koneksi.php';
                     </div>
                 </div>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Search"
+                    <input class="form-control me-2 rounded-pill" type="search" placeholder="Cari...."
                         aria-label="Search">
                     <button class="btn btn-outline-success rounded-pill" type="submit">Search</button>
                 </form>

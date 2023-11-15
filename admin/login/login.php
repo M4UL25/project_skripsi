@@ -10,7 +10,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
-<body class="my-bg" style="background-color: #F6F4EB">
+<body class="my-bg" style="background-color: #EBF3E8">
     <div class="container d-flex align-items-center" style="min-height:80vh">
         <div class="row justify-content-center">
             <div class="col-md-5">

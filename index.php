@@ -94,10 +94,10 @@ include 'admin/koneksi/koneksi.php';
     </div>
 
     <div class="container mt-5">
-        <div class="row mb-3">
+        <div class="row mb-5">
             <h2 class="f-ab text-center">Bencana dapat dibagi menjadi beberapa Kategori</h2>
         </div>
-        <div class="row">
+        <div class="row mb-5">
             <div class="col-md-4 mb-3">
                 <div class="card">
                     <img style="" src="src/img/eartquake.jpeg" alt="">
@@ -186,11 +186,11 @@ include 'admin/koneksi/koneksi.php';
     <div class="container-fluid my-3">
         <div class="container">
             <div class="row">
-                <div class="col-md-12 text-center">
+                <div class="col-md-12 text-center mt-5">
                     <h1 class="f-ab">Partisipasi Masyarakat dalam Mitigasi Bencana</h1>
                 </div>
             </div>
-            <div class="row mt-3">
+            <div class="row my-5">
                 <div class="col-md-4">
                     <h3 class="f-ab text-center">Pra-Bencana</h3>
                     <ul>
