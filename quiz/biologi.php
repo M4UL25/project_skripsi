@@ -85,7 +85,7 @@
         var playerName = "";
 
         var questions = [
-            {
+            { //1
                 question: "Yang termasuk bencana biologi?",
                 answers: [
                     { text: "Konflik", correct: false },
@@ -94,40 +94,175 @@
                     { text: "Wabah", correct: true }
                 ]
             },
-            {
-                question: "Faktor penyebab wilayah Indoensia sering dilanda gempa adalah...",
+            { //2
+                question: "Apa yang dimaksud dengan bencana biologi?",
                 answers: [
-                    { text: "Hutan di Indonesia sudah gundul", correct: false },
-                    { text: "Tempat bertemunya tiga lempeng litosfer", correct: true },
-                    { text: "Dilalui dua pegunungan lipatan muda", correct: false },
-                    { text: "Terletak diantara dua samudera", correct: false }
+                    { text: "Bencana yang disebabkan oleh kegiatan manusia", correct: false },
+                    { text: "Bencana yang melibatkan kehidupan biologis dan lingkungannya", correct: true },
+                    { text: "Bencana yang hanya terjadi di laboratorium", correct: false },
+                    { text: "Bencana yang disebabkan oleh perubahan iklim", correct: false }
                 ]
             },
-            {
-                question: "Beberapa pulau di Indonesia tercatat sebagai pulau yang rawan gempa lantaran akrab dengan sentra gempa. Namun ada pula pulau yang cukup kondusif lantaran jauh dari sentra gempa. Salah satu pulau di Indonesia yang jauh dari sentra gempa adalah...",
+            { //3
+                question: "Virus yang menyebabkan penyakit COVID-19 disebut dengan nama apa?",
                 answers: [
-                    { text: "Jawa", correct: false },
-                    { text: "Kalimantan", correct: true },
-                    { text: "Sulawesi", correct: false },
-                    { text: "Sumatera", correct: false }
+                    { text: "Ebola", correct: false },
+                    { text: "SARS-CoV-2", correct: true },
+                    { text: "Influenza", correct: false },
+                    { text: "HIV", correct: false }
                 ]
             },
-            {
-                question: "Gempa bumi yang terjadi karena aktivitas meletusnya gunung berapi adalah..",
+            { //4
+                question: "Apa yang dapat dilakukan untuk mencegah penyebaran penyakit infeksi seperti influenza?",
                 answers: [
-                    { text: "Tektonik", correct: false },
-                    { text: "Vulkanik", correct: true },
-                    { text: "Tumbukan", correct: false },
-                    { text: "Runtuhan", correct: false }
+                    { text: "Menjauhi vaksinasi", correct: false },
+                    { text: "Menerapkan isolasi sosial dan mencuci tangan secara teratur", correct: true },
+                    { text: "Mengabaikan kebersihan tangan", correct: false },
+                    { text: "Memperbanyak kontak dengan orang yang sakit", correct: false }
                 ]
             },
-            {
-                question: "Gempa bumi sanggup menjadikan kerusakan yang bervariasi tergantung pada kekuatan gempa tersebut. Alat yang dipakai untuk mencatat kekuatan gempa adalah...",
+            { //5
+                question: "Apakah fungsi vaksin dalam penanggulangan bencana biologi?",
                 answers: [
-                    { text: "Altimeter", correct: false },
-                    { text: "Seismograf", correct: true },
-                    { text: "Anemometer", correct: false },
-                    { text: "Termograf", correct: false }
+                    { text: "Menciptakan resistensi terhadap antibiotik", correct: false },
+                    { text: "Membangun kekebalan tubuh terhadap penyakit tertentu", correct: true },
+                    { text: "Menghancurkan mikroba di dalam tubuh", correct: false },
+                    { text: "Menyebabkan penyebaran penyakit lebih cepat", correct: false }
+                ]
+            },
+            { //6
+                question: "Apa yang dimaksud dengan zoonosis?",
+                answers: [
+                    { text: "Penyakit yang hanya menyerang hewan", correct: false },
+                    { text: "Penyakit yang dapat ditularkan dari hewan ke manusia", correct: true },
+                    { text: "Penyakit yang menyebar melalui udara", correct: false },
+                    { text: "Penyakit yang hanya menyerang manusia", correct: false }
+                ]
+            },
+            { //7
+                question: "Apa tindakan yang tepat dalam penanggulangan wabah penyakit?",
+                answers: [
+                    { text: "Menyembunyikan informasi", correct: false },
+                    { text: "Menerapkan karantina dan isolasi", correct: true },
+                    { text: "Mengabaikan petunjuk kesehatan", correct: false },
+                    { text: "Meningkatkan mobilitas penduduk", correct: false }
+                ]
+            },
+            { //8
+                question: "Mengapa resistensi antibiotik menjadi ancaman serius?",
+                answers: [
+                    { text: "Karena antibiotik tidak efektif melawan bakteri", correct: false },
+                    { text: "Karena bakteri dapat menjadi kebal terhadap efek antibiotik", correct: true },
+                    { text: "Karena antibiotik hanya dapat digunakan pada manusia", correct: false },
+                    { text: "Karena antibiotik hanya tersedia di rumah sakit", correct: false }
+                ]
+            },
+            { //9
+                question: "Apa yang dapat dilakukan untuk meminimalkan risiko penularan penyakit di tempat umum?",
+                answers: [
+                    { text: "Menjauhi kebersihan tangan", correct: false },
+                    { text: "Menggunakan masker dan menjaga jarak fisik", correct: true },
+                    { text: "Memperbanyak kontak fisik dengan orang lain", correct: false },
+                    { text: "Mengabaikan petunjuk kesehatan", correct: false }
+                ]
+            },
+            { //10
+                question: "Bagaimana peran edukasi masyarakat dalam penanggulangan bencana biologi?",
+                answers: [
+                    { text: "Meningkatkan risiko penularan penyakit", correct: false },
+                    { text: "Meningkatkan pemahaman dan kesadaran untuk pencegahan", correct: true },
+                    { text: "Meningkatkan kepanikan masyarakat", correct: false },
+                    { text: "Mengabaikan informasi kesehatan", correct: false }
+                ]
+            },
+            { //11
+                question: "Apa yang dimaksud dengan bencana biologi?",
+                answers: [
+                    { text: "Kejadian alam yang merugikan lingkungan", correct: false },
+                    { text: "Kejadian yang melibatkan ancaman terhadap kehidupan manusia dan lingkungan oleh organisme biologis", correct: true },
+                    { text: "Kejadian yang hanya terjadi di laboratorium", correct: false },
+                    { text: "Kejadian yang disebabkan oleh perubahan iklim", correct: false }
+                ]
+            },
+            { //12
+                question: "Apa yang dapat dilakukan untuk memitigasi dampak wabah penyakit?",
+                answers: [
+                    { text: "Mengabaikan petunjuk kesehatan", correct: false },
+                    { text: "Menerapkan karantina dan isolasi", correct: true },
+                    { text: "Meningkatkan mobilitas penduduk", correct: false },
+                    { text: "Memperbanyak kontak fisik dengan orang lain", correct: false }
+                ]
+            },
+            { //13
+                question: "Apa peran vaksin dalam penanggulangan bencana biologi?",
+                answers: [
+                    { text: "Menghancurkan mikroba di dalam tubuh", correct: false },
+                    { text: "Membangun kekebalan tubuh terhadap penyakit tertentu", correct: true },
+                    { text: "Menyebabkan penyebaran penyakit lebih cepat", correct: false },
+                    { text: "Memperkuat ketidaksetaraan", correct: false }
+                ]
+            },
+            { //14
+                question: "Bagaimana cara meminimalkan penyebaran penyakit infeksi di tempat umum?",
+                answers: [
+                    { text: "Memperbanyak kontak fisik dengan orang lain", correct: false },
+                    { text: "Menggunakan masker dan menjaga jarak fisik", correct: true },
+                    { text: "Mengabaikan kebersihan tangan", correct: false },
+                    { text: "Menyembunyikan informasi", correct: false }
+                ]
+            },
+            { //15
+                question: "Apa yang dapat dilakukan oleh masyarakat dalam menghadapi ancaman wabah penyakit?",
+                answers: [
+                    { text: "Mengabaikan petunjuk kesehatan", correct: false },
+                    { text: "Mengikuti pedoman kesehatan dan mendukung upaya pencegahan", correct: true },
+                    { text: "Menjaga ketidaksetaraan", correct: false },
+                    { text: "Meningkatkan isolasi sosial", correct: false }
+                ]
+            },
+            { //16
+                question: "Mengapa penting memiliki sistem deteksi dini untuk wabah penyakit?",
+                answers: [
+                    { text: "Agar dapat menunda respons pencegahan", correct: false },
+                    { text: "Untuk memberikan informasi yang akurat dan cepat", correct: true },
+                    { text: "Agar dapat memperbanyak kontak fisik dengan orang lain", correct: false },
+                    { text: "Mengabaikan risiko penularan penyakit", correct: false }
+                ]
+            },
+            { //17
+                question: "Apa dampak dari penolakan vaksin dalam upaya penanggulangan bencana biologi?",
+                answers: [
+                    { text: "Mempercepat penyebaran penyakit", correct: false },
+                    { text: "Menghambat upaya membangun kekebalan kelompok", correct: true },
+                    { text: "Meningkatkan resistensi antibiotik", correct: false },
+                    { text: "Menghancurkan mikroba di dalam tubuh", correct: false }
+                ]
+            },
+            { //18
+                question: "Apa yang dapat dilakukan oleh pemerintah untuk meningkatkan kapasitas tanggap darurat terhadap wabah penyakit?",
+                answers: [
+                    { text: "Mengabaikan risiko penularan penyakit", correct: false },
+                    { text: "Menerapkan sistem deteksi dini yang efektif", correct: true },
+                    { text: "Meningkatkan ketidaksetaraan dalam masyarakat", correct: false },
+                    { text: "Memperbanyak kontak fisik dengan orang lain", correct: false }
+                ]
+            },
+            { //19
+                question: "Apa yang dimaksud dengan isolasi sosial dalam konteks penanggulangan wabah penyakit?",
+                answers: [
+                    { text: "Mengumpulkan orang banyak dalam satu tempat", correct: false },
+                    { text: "Memisahkan individu yang terinfeksi atau berisiko tinggi dari yang lain", correct: true },
+                    { text: "Meningkatkan kontak fisik dengan orang lain", correct: false },
+                    { text: "Mengabaikan pedoman kesehatan", correct: false }
+                ]
+            },
+            { //20
+                question: "Bagaimana peran edukasi masyarakat dalam penanggulangan bencana biologi?",
+                answers: [
+                    { text: "Mengabaikan informasi kesehatan", correct: false },
+                    { text: "Meningkatkan pemahaman dan kesadaran untuk pencegahan", correct: true },
+                    { text: "Meningkatkan kepanikan masyarakat", correct: false },
+                    { text: "Menyembunyikan informasi", correct: false }
                 ]
             },
             // Tambahkan soal dan jawaban lainnya sesuai kebutuhan

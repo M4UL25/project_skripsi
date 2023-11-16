@@ -85,7 +85,7 @@
         var playerName = "";
 
         var questions = [
-            {
+            { //1
                 question: "Yang termasuk bencana hidrometeorologi?",
                 answers: [
                     { text: "Konflik", correct: false },
@@ -94,40 +94,175 @@
                     { text: "Wabah", correct: false }
                 ]
             },
-            {
-                question: "Faktor penyebab wilayah Indoensia sering dilanda gempa adalah...",
+            { //2
+                question: "Apa yang dimaksud dengan bencana hidrometeorologi?",
                 answers: [
-                    { text: "Hutan di Indonesia sudah gundul", correct: false },
-                    { text: "Tempat bertemunya tiga lempeng litosfer", correct: true },
-                    { text: "Dilalui dua pegunungan lipatan muda", correct: false },
-                    { text: "Terletak diantara dua samudera", correct: false }
+                    { text: "Bencana yang disebabkan oleh aktivitas manusia di perairan", correct: false },
+                    { text: "Bencana yang disebabkan oleh faktor meteorologi dan air", correct: true },
+                    { text: "Bencana yang hanya melibatkan faktor cuaca", correct: false },
+                    { text: "Bencana yang disebabkan oleh kebakaran hutan", correct: false }
                 ]
             },
-            {
-                question: "Beberapa pulau di Indonesia tercatat sebagai pulau yang rawan gempa lantaran akrab dengan sentra gempa. Namun ada pula pulau yang cukup kondusif lantaran jauh dari sentra gempa. Salah satu pulau di Indonesia yang jauh dari sentra gempa adalah...",
+            { //3
+                question: "Contoh bencana hidrometeorologi yang melibatkan pengangkutan material oleh air disebut...",
                 answers: [
-                    { text: "Jawa", correct: false },
-                    { text: "Kalimantan", correct: true },
-                    { text: "Sulawesi", correct: false },
-                    { text: "Sumatera", correct: false }
+                    { text: "Gempa bumi", correct: false },
+                    { text: "Tanah longsor", correct: true },
+                    { text: "Banjir", correct: false },
+                    { text: "Badai salju", correct: false }
                 ]
             },
-            {
-                question: "Gempa bumi yang terjadi karena aktivitas meletusnya gunung berapi adalah..",
+            { //4
+                question: "Apa yang dapat menjadi penyebab banjir secara hidrometeorologi?",
                 answers: [
-                    { text: "Tektonik", correct: false },
-                    { text: "Vulkanik", correct: true },
-                    { text: "Tumbukan", correct: false },
-                    { text: "Runtuhan", correct: false }
+                    { text: "Peningkatan ketinggian permukaan laut", correct: false },
+                    { text: "Hujan lebat dan aliran air sungai yang tinggi", correct: true },
+                    { text: "Pencemaran air sungai", correct: false },
+                    { text: "Penurunan suhu udara secara tiba-tiba", correct: false }
                 ]
             },
-            {
-                question: "Gempa bumi sanggup menjadikan kerusakan yang bervariasi tergantung pada kekuatan gempa tersebut. Alat yang dipakai untuk mencatat kekuatan gempa adalah...",
+            { //5
+                question: "Manakah pernyataan berikut yang benar tentang topan?",
                 answers: [
-                    { text: "Altimeter", correct: false },
-                    { text: "Seismograf", correct: true },
-                    { text: "Anemometer", correct: false },
-                    { text: "Termograf", correct: false }
+                    { text: "Topan adalah badai salju yang disertai angin kencang", correct: false },
+                    { text: "Topan adalah siklon tropis yang memiliki angin berkecepatan tinggi dan mendalam", correct: true },
+                    { text: "Topan hanya terjadi di daerah kutub", correct: false },
+                    { text: "Topan disebabkan oleh perubahan iklim global", correct: false }
+                ]
+            },
+            { //6
+                question: "Apa yang dapat dilakukan untuk memitigasi risiko bencana hidrometeorologi seperti banjir?",
+                answers: [
+                    { text: "Meningkatkan penebangan hutan", correct: false },
+                    { text: "Membangun tanggul dan sistem pengendalian banjir", correct: true },
+                    { text: "Mengabaikan drainase perkotaan", correct: false },
+                    { text: "Menyebarkan limbah industri ke sungai", correct: false }
+                ]
+            },
+            { //7
+                question: "Apakah peran sistem peringatan dini dalam penanggulangan bencana hidrometeorologi?",
+                answers: [
+                    { text: "Meningkatkan intensitas hujan", correct: false },
+                    { text: "Memberikan informasi cepat dan peringatan kepada masyarakat tentang potensi bahaya", correct: true },
+                    { text: "Menyebabkan kebakaran hutan", correct: false },
+                    { text: "Mengurangi kelembapan udara", correct: false }
+                ]
+            },
+            { //8
+                question: "Apa yang dapat dilakukan untuk mengurangi risiko bencana hidrometeorologi di wilayah rawan tanah longsor?",
+                answers: [
+                    { text: "Meningkatkan curah hujan", correct: false },
+                    { text: "Menanam pepohonan untuk memperkuat tanah", correct: true },
+                    { text: "Membangun permukiman di lereng bukit", correct: false },
+                    { text: "Menambah beban tanah di lereng curam", correct: false }
+                ]
+            },
+            { //9
+                question: "Apakah efek pemanasan global dapat mempengaruhi kejadian bencana hidrometeorologi?",
+                answers: [
+                    { text: "Tidak, karena pemanasan global hanya berdampak pada suhu udara", correct: false },
+                    { text: "Ya, dapat meningkatkan frekuensi dan intensitas kejadian seperti banjir dan topan", correct: true },
+                    { text: "Tidak ada hubungannya antara pemanasan global dan bencana hidrometeorologi", correct: false },
+                    { text: "Hanya berdampak pada tanah longsor", correct: false }
+                ]
+            },
+            { //10
+                question: "Bagaimana peran komunitas lokal dalam penanggulangan bencana hidrometeorologi?",
+                answers: [
+                    { text: "Meningkatkan risiko dengan tidak melakukan persiapan", correct: false },
+                    { text: "Terlibat dalam perencanaan dan persiapan, serta mematuhi petunjuk evakuasi", correct: true },
+                    { text: "Melakukan deforestasi secara besar-besaran", correct: false },
+                    { text: "Mengabaikan peringatan dini", correct: false }
+                ]
+            },
+            { //11
+                question: "Apa yang dimaksud dengan bencana hidrometeorologi?",
+                answers: [
+                    { text: "Bencana yang disebabkan oleh aktivitas manusia di perairan", correct: false },
+                    { text: "Bencana yang disebabkan oleh faktor meteorologi dan air", correct: true },
+                    { text: "Bencana yang hanya melibatkan faktor cuaca", correct: false },
+                    { text: "Bencana yang disebabkan oleh penanggulangan bencana", correct: false }
+                ]
+            },
+            { //12
+                question: "Contoh bencana hidrometeorologi yang melibatkan kejadian gelombang air laut yang tinggi disebut...",
+                answers: [
+                    { text: "Banjir", correct: false },
+                    { text: "Badai surut", correct: true },
+                    { text: "Tanah longsor", correct: false },
+                    { text: "Topan", correct: false }
+                ]
+            },
+            { //13
+                question: "Apa yang dapat menjadi penyebab banjir secara hidrometeorologi?",
+                answers: [
+                    { text: "Peningkatan ketinggian permukaan laut", correct: false },
+                    { text: "Hujan lebat dan aliran sungai yang tinggi", correct: true },
+                    { text: "Pencemaran air sungai", correct: false },
+                    { text: "Penurunan suhu udara secara tiba-tiba", correct: false }
+                ]
+            },
+            { //14
+                question: "Manakah langkah yang efektif dalam penanggulangan bencana banjir?",
+                answers: [
+                    { text: "Membuang sampah sembarangan ke sungai", correct: false },
+                    { text: "Meningkatkan sistem drainase kota", correct: true },
+                    { text: "Membangun permukiman di daerah rawan banjir", correct: false },
+                    { text: "Menebang hutan di sepanjang aliran sungai", correct: false }
+                ]
+            },
+            { //15
+                question: "Bagaimana peran sistem peringatan dini dalam penanggulangan bencana hidrometeorologi?",
+                answers: [
+                    { text: "Menyebabkan kebakaran hutan", correct: false },
+                    { text: "Memberikan informasi cepat dan peringatan kepada masyarakat tentang potensi bahaya", correct: true },
+                    { text: "Meningkatkan intensitas hujan", correct: false },
+                    { text: "Mengurangi kelembapan udara", correct: false }
+                ]
+            },
+            { //16
+                question: "Apa yang dapat dilakukan oleh komunitas lokal untuk meningkatkan ketangguhan terhadap bencana banjir?",
+                answers: [
+                    { text: "Mengabaikan peringatan dini", correct: false },
+                    { text: "Terlibat dalam latihan evakuasi dan memahami rute evakuasi", correct: true },
+                    { text: "Membuang sampah ke sungai", correct: false },
+                    { text: "Membangun tanggul pribadi", correct: false }
+                ]
+            },
+            { //17
+                question: "Apakah regulasi yang ketat terkait tata ruang dan penggunaan lahan dapat membantu dalam penanggulangan bencana hidrometeorologi?",
+                answers: [
+                    { text: "Tidak, karena regulasi tersebut hanya membatasi pembangunan", correct: false },
+                    { text: "Ya, dapat mengurangi risiko dan dampak banjir", correct: true },
+                    { text: "Tidak ada korelasi antara regulasi dan bencana hidrometeorologi", correct: false },
+                    { text: "Meningkatkan risiko banjir", correct: false }
+                ]
+            },
+            { //18
+                question: "Apa yang dapat dilakukan oleh pemerintah untuk meningkatkan penanggulangan bencana hidrometeorologi?",
+                answers: [
+                    { text: "Mengurangi alokasi anggaran untuk penanggulangan bencana", correct: false },
+                    { text: "Meningkatkan pemahaman masyarakat melalui kampanye informasi", correct: true },
+                    { text: "Mengabaikan sistem peringatan dini", correct: false },
+                    { text: "Tidak melakukan perbaikan infrastruktur", correct: false }
+                ]
+            },
+            { //19
+                question: "Bagaimana pentingnya pendidikan tentang bencana hidrometeorologi di sekolah dan masyarakat?",
+                answers: [
+                    { text: "Tidak penting, karena bencana hanya terjadi secara alamiah", correct: false },
+                    { text: "Sangat penting untuk meningkatkan kesadaran dan persiapan dalam menghadapi bencana", correct: true },
+                    { text: "Cukup penting, tetapi tidak memerlukan tindakan konkret", correct: false },
+                    { text: "Meningkatkan risiko bencana", correct: false }
+                ]
+            },
+            { //20
+                question: "Apa yang dapat dilakukan untuk meningkatkan ketangguhan infrastruktur kritis terhadap bencana hidrometeorologi?",
+                answers: [
+                    { text: "Tidak melakukan pemeliharaan rutin", correct: false },
+                    { text: "Melakukan inspeksi dan pemeliharaan teratur pada infrastruktur kritis", correct: true },
+                    { text: "Meningkatkan konsumsi air sungai", correct: false },
+                    { text: "Mengurangi kapasitas saluran air", correct: false }
                 ]
             },
             // Tambahkan soal dan jawaban lainnya sesuai kebutuhan

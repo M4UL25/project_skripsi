@@ -85,8 +85,8 @@
         var playerName = "";
 
         var questions = [
-            {
-                question: "Yang termasuk bencana kegagalan teknologi?",
+            { //1
+                question: "Yang termasuk bencana kegagalan sosial?",
                 answers: [
                     { text: "Konflik", correct: true },
                     { text: "Gempa", correct: false },
@@ -94,40 +94,175 @@
                     { text: "Wabah", correct: false }
                 ]
             },
-            {
-                question: "Faktor penyebab wilayah Indoensia sering dilanda gempa adalah...",
+            { //2
+                question: "Apa yang dimaksud dengan bencana sosial?",
                 answers: [
-                    { text: "Hutan di Indonesia sudah gundul", correct: false },
-                    { text: "Tempat bertemunya tiga lempeng litosfer", correct: true },
-                    { text: "Dilalui dua pegunungan lipatan muda", correct: false },
-                    { text: "Terletak diantara dua samudera", correct: false }
+                    { text: "Bencana yang terjadi akibat kegagalan teknologi", correct: false },
+                    { text: "Bencana yang menimbulkan dampak besar terhadap masyarakat", correct: true },
+                    { text: "Bencana yang disebabkan oleh faktor alam", correct: false },
+                    { text: "Bencana yang hanya terjadi di bidang ekonomi", correct: false }
                 ]
             },
-            {
-                question: "Beberapa pulau di Indonesia tercatat sebagai pulau yang rawan gempa lantaran akrab dengan sentra gempa. Namun ada pula pulau yang cukup kondusif lantaran jauh dari sentra gempa. Salah satu pulau di Indonesia yang jauh dari sentra gempa adalah...",
+            { //3
+                question: "Faktor apa yang dapat menyebabkan bencana sosial?",
                 answers: [
-                    { text: "Jawa", correct: false },
-                    { text: "Kalimantan", correct: true },
-                    { text: "Sulawesi", correct: false },
-                    { text: "Sumatera", correct: false }
+                    { text: "Aktivitas vulkanik dan gempa bumi", correct: false },
+                    { text: "Konflik sosial, ketidaksetaraan, dan kemiskinan", correct: true },
+                    { text: "Pemanasan global dan perubahan iklim", correct: false },
+                    { text: "Kelebihan penduduk dan urbanisasi", correct: false }
                 ]
             },
-            {
-                question: "Gempa bumi yang terjadi karena aktivitas meletusnya gunung berapi adalah..",
+            { //4
+                question: "Apa peran pemerintah dalam penanggulangan bencana sosial?",
                 answers: [
-                    { text: "Tektonik", correct: false },
-                    { text: "Vulkanik", correct: true },
-                    { text: "Tumbukan", correct: false },
-                    { text: "Runtuhan", correct: false }
+                    { text: "Memperburuk situasi", correct: false },
+                    { text: "Menyediakan bantuan dan perlindungan sosial", correct: true },
+                    { text: "Hanya menyelamatkan diri sendiri", correct: false },
+                    { text: "Mengabaikan peran dalam penanggulangan bencana sosial", correct: false }
                 ]
             },
-            {
+            { //5
                 question: "Gempa bumi sanggup menjadikan kerusakan yang bervariasi tergantung pada kekuatan gempa tersebut. Alat yang dipakai untuk mencatat kekuatan gempa adalah...",
                 answers: [
                     { text: "Altimeter", correct: false },
                     { text: "Seismograf", correct: true },
                     { text: "Anemometer", correct: false },
                     { text: "Termograf", correct: false }
+                ]
+            },
+            { //6
+                question: "Apa definisi bencana sosial?",
+                answers: [
+                    { text: "Kejadian alam yang merugikan masyarakat", correct: false },
+                    { text: "Kejadian yang disebabkan oleh faktor manusia dan merugikan masyarakat", correct: true },
+                    { text: "Kejadian yang hanya terjadi di bidang ekonomi", correct: false },
+                    { text: "Kejadian yang hanya merugikan kelompok tertentu", correct: false }
+                ]
+            },
+            { //7
+                question: "Apa yang dimaksud dengan ketidaksetaraan sosial?",
+                answers: [
+                    { text: "Kesetaraan dalam distribusi sumber daya", correct: false },
+                    { text: "Ketidaksetaraan dalam kekayaan dan akses ke sumber daya", correct: true },
+                    { text: "Ketidaksetaraan dalam kebahagiaan", correct: false },
+                    { text: "Kesetaraan dalam peluang", correct: false }
+                ]
+            },
+            { //8
+                question: "Faktor apa yang dapat menyebabkan konflik sosial?",
+                answers: [
+                    { text: "Kesetaraan dan keadilan", correct: false },
+                    { text: "Ketidaksetaraan, ketidakadilan, dan persaingan berlebihan", correct: true },
+                    { text: "Komunikasi yang baik", correct: false },
+                    { text: "Keterbukaan dan toleransi", correct: false }
+                ]
+            },
+            { //9
+                question: "Apa yang dapat menjadi dampak dari kemiskinan terhadap masyarakat?",
+                answers: [
+                    { text: "Penurunan tingkat kejahatan", correct: false },
+                    { text: "Penurunan kesehatan dan pendidikan", correct: true },
+                    { text: "Peningkatan kesejahteraan", correct: false },
+                    { text: "Keseimbangan ekonomi", correct: false }
+                ]
+            },
+            { //10
+                question: "Bagaimana masyarakat dapat berkontribusi dalam penanggulangan bencana sosial?",
+                answers: [
+                    { text: "Dengan meningkatkan ketidaksetaraan", correct: false },
+                    { text: "Dengan mengabaikan masalah sosial", correct: true },
+                    { text: "Dengan mengabaikan masalah sosial", correct: false },
+                    { text: "Dengan menambah intensitas konflik sosial", correct: false }
+                ]
+            },
+            { //11
+                question: "Apa yang dimaksud dengan radikalisasi?",
+                answers: [
+                    { text: "Perubahan tajam", correct: false },
+                    { text: "Proses menjadi radikal dan ekstrem", correct: true },
+                    { text: "Perubahan positif dalam masyarakat", correct: false },
+                    { text: "Toleransi terhadap perbedaan", correct: false }
+                ]
+            },
+            { //12
+                question: "Apa yang dimaksud dengan mitigasi dalam konteks penanggulangan bencana sosial?",
+                answers: [
+                    { text: "Peningkatan konflik sosial", correct: false },
+                    { text: "Tindakan untuk mengurangi risiko dan dampak bencana", correct: true },
+                    { text: "Meningkatkan intensitas bencana", correct: false },
+                    { text: "Memperkuat ketidaksetaraan", correct: false }
+                ]
+            },
+            { //13
+                question: "Apa peran komunitas dalam penanggulangan bencana sosial?",
+                answers: [
+                    { text: "Menjaga ketidaksetaraan", correct: false },
+                    { text: "Menyediakan bantuan dan dukungan sosial", correct: true },
+                    { text: "Meningkatkan konflik sosial", correct: false },
+                    { text: "Mengabaikan masalah sosial", correct: false }
+                ]
+            },
+            { //14
+                question: "Tindakan apa yang dapat diambil untuk mencegah ketidaksetaraan dalam masyarakat?",
+                answers: [
+                    { text: "Meningkatkan konflik sosial", correct: false },
+                    { text: "Menerapkan kebijakan yang mendukung kesetaraan", correct: true },
+                    { text: "Mempertahankan status quo", correct: false },
+                    { text: "Mengabaikan hak asasi manusia", correct: false }
+                ]
+            },
+            { //15
+                question: "Bagaimana peran pemerintah dalam menanggulangi kemiskinan?",
+                answers: [
+                    { text: "Memperburuk situasi kemiskinan", correct: false },
+                    { text: "Menyediakan program bantuan sosial dan pembangunan ekonomi", correct: true },
+                    { text: "Meningkatkan ketidaksetaraan", correct: false },
+                    { text: "Mengabaikan masalah kemiskinan", correct: false }
+                ]
+            },
+            { //16
+                question: "Apa yang dimaksud dengan inklusi sosial?",
+                answers: [
+                    { text: "Meningkatkan segregasi masyarakat", correct: false },
+                    { text: "Mempromosikan keberagaman dan partisipasi semua individu dalam masyarakat", correct: true },
+                    { text: "Mempromosikan keberagaman dan partisipasi semua individu dalam masyarakat", correct: false },
+                    { text: "Memperkuat konflik sosial", correct: false }
+                ]
+            },
+            { //17
+                question: "Apa peran lembaga non-pemerintah (LSM) dalam penanggulangan bencana sosial?",
+                answers: [
+                    { text: "Meningkatkan konflik sosial", correct: false },
+                    { text: "Memberikan bantuan, advokasi, dan pendampingan sosial", correct: true },
+                    { text: "Menjaga ketidaksetaraan", correct: false },
+                    { text: "Mengabaikan masalah sosial", correct: false }
+                ]
+            },
+            { //18
+                question: "Bagaimana partisipasi masyarakat dapat membantu dalam penanggulangan bencana sosial?",
+                answers: [
+                    { text: "Meningkatkan segregasi masyarakat", correct: false },
+                    { text: "Memberikan informasi lokal, sumber daya, dan dukungan sosial", correct: true },
+                    { text: "Meningkatkan konflik sosial", correct: false },
+                    { text: "Membuat kebijakan yang tidak mendukung kesetaraan", correct: false }
+                ]
+            },
+            { //19
+                question: "Apa yang dapat dilakukan untuk mengatasi polarisasi sosial dalam masyarakat?",
+                answers: [
+                    { text: "Meningkatkan konflik sosial", correct: false },
+                    { text: "Meningkatkan dialog antar kelompok", correct: true },
+                    { text: "Memperkuat ketidaksetaraan", correct: false },
+                    { text: "Menjaga keberagaman budaya", correct: false }
+                ]
+            },
+            { //20
+                question: "Bagaimana teknologi informasi dapat digunakan untuk penanggulangan bencana sosial?",
+                answers: [
+                    { text: "Memperkuat ketidaksetaraan", correct: false },
+                    { text: "Memberikan informasi cepat dan mendukung koordinasi bantuan", correct: true },
+                    { text: "Meningkatkan intensitas bencana", correct: false },
+                    { text: "Meningkatkan konflik sosial", correct: false }
                 ]
             },
             // Tambahkan soal dan jawaban lainnya sesuai kebutuhan

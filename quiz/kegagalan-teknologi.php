@@ -85,7 +85,7 @@
         var playerName = "";
 
         var questions = [
-            {
+            { //1
                 question: "Yang termasuk bencana kegagalan teknologi?",
                 answers: [
                     { text: "Konflik", correct: false },
@@ -94,40 +94,175 @@
                     { text: "Wabah", correct: false }
                 ]
             },
-            {
-                question: "Faktor penyebab wilayah Indoensia sering dilanda gempa adalah...",
+            { //2
+                question: "Apa yang dimaksud dengan bencana kegagalan teknologi?",
                 answers: [
-                    { text: "Hutan di Indonesia sudah gundul", correct: false },
-                    { text: "Tempat bertemunya tiga lempeng litosfer", correct: true },
-                    { text: "Dilalui dua pegunungan lipatan muda", correct: false },
-                    { text: "Terletak diantara dua samudera", correct: false }
+                    { text: "Bencana yang disebabkan oleh faktor alam", correct: false },
+                    { text: "Bencana yang melibatkan ancaman terhadap teknologi", correct: true },
+                    { text: "Bencana yang hanya terjadi di laboratorium", correct: false },
+                    { text: "Bencana yang disebabkan oleh perubahan iklim", correct: false }
                 ]
             },
-            {
-                question: "Beberapa pulau di Indonesia tercatat sebagai pulau yang rawan gempa lantaran akrab dengan sentra gempa. Namun ada pula pulau yang cukup kondusif lantaran jauh dari sentra gempa. Salah satu pulau di Indonesia yang jauh dari sentra gempa adalah...",
+            { //3
+                question: "Contoh bencana kegagalan teknologi yang melibatkan kerusakan sistem komputer atau jaringan disebut...",
                 answers: [
-                    { text: "Jawa", correct: false },
-                    { text: "Kalimantan", correct: true },
-                    { text: "Sulawesi", correct: false },
-                    { text: "Sumatera", correct: false }
+                    { text: "Tsunami", correct: false },
+                    { text: "Pencurian identitas", correct: true },
+                    { text: "Gempa bumi", correct: false },
+                    { text: "Erupsi gunung berapi", correct: false }
                 ]
             },
-            {
-                question: "Gempa bumi yang terjadi karena aktivitas meletusnya gunung berapi adalah..",
+            { //4
+                question: "Apakah yang dapat menyebabkan bencana kegagalan teknologi di sektor energi?",
                 answers: [
-                    { text: "Tektonik", correct: false },
-                    { text: "Vulkanik", correct: true },
-                    { text: "Tumbukan", correct: false },
-                    { text: "Runtuhan", correct: false }
+                    { text: "Peningkatan efisiensi sistem", correct: false },
+                    { text: "Pemadaman listrik massal", correct: true },
+                    { text: "Perawatan rutin peralatan", correct: false },
+                    { text: "Implementasi energi terbarukan", correct: false }
                 ]
             },
-            {
-                question: "Gempa bumi sanggup menjadikan kerusakan yang bervariasi tergantung pada kekuatan gempa tersebut. Alat yang dipakai untuk mencatat kekuatan gempa adalah...",
+            { //5
+                question: "Apa yang dapat dilakukan untuk mengurangi risiko bencana kegagalan teknologi dalam bisnis?",
                 answers: [
-                    { text: "Altimeter", correct: false },
-                    { text: "Seismograf", correct: true },
-                    { text: "Anemometer", correct: false },
-                    { text: "Termograf", correct: false }
+                    { text: "Tidak melakukan pembaruan perangkat lunak", correct: false },
+                    { text: "Mengadopsi praktik keamanan yang ketat dan melakukan backup data secara berkala", correct: true },
+                    { text: "Mengabaikan keamanan siber", correct: false },
+                    { text: "Meningkatkan penggunaan teknologi terbaru tanpa evaluasi risiko", correct: false }
+                ]
+            },
+            { //6
+                question: "Bagaimana peran pelatihan karyawan dalam mengurangi dampak bencana kegagalan teknologi di tempat kerja?",
+                answers: [
+                    { text: "Tidak berpengaruh", correct: false },
+                    { text: "Meningkatkan pemahaman karyawan untuk respons dan pemulihan", correct: true },
+                    { text: "Meningkatkan risiko kegagalan teknologi", correct: false },
+                    { text: "Menyebabkan bencana", correct: false }
+                ]
+            },
+            { //7
+                question: "Apa yang dapat dilakukan untuk mengatasi risiko keamanan siber dalam kegagalan teknologi?",
+                answers: [
+                    { text: "Tidak menginstal perangkat lunak keamanan", correct: false },
+                    { text: "Mengimplementasikan kebijakan keamanan yang ketat dan melakukan pembaruan secara teratur", correct: true },
+                    { text: "Menggunakan kata sandi yang sama untuk semua akun", correct: false },
+                    { text: "Membiarkan sistem operasi dan perangkat lunak usang", correct: false }
+                ]
+            },
+            { //8
+                question: "Apa yang dapat menjadi penyebab bencana kegagalan teknologi di sektor transportasi?",
+                answers: [
+                    { text: "Pemeliharaan rutin kendaraan", correct: false },
+                    { text: "Kerusakan peralatan navigasi", correct: true },
+                    { text: "Keamanan jalan yang tinggi", correct: false },
+                    { text: "Penggunaan transportasi berbasis energi terbarukan", correct: false }
+                ]
+            },
+            { //9
+                question: "Bagaimana peran regulasi dan kebijakan dalam mengurangi risiko bencana kegagalan teknologi?",
+                answers: [
+                    { text: "Meningkatkan risiko dengan menghilangkan batasan", correct: false },
+                    { text: "Memberikan panduan dan standar untuk keselamatan dan keamanan", correct: true },
+                    { text: "Tidak berpengaruh pada keberlanjutan teknologi", correct: false },
+                    { text: "Menghambat inovasi", correct: false }
+                ]
+            },
+            { //10
+                question: "Apa yang dapat dilakukan untuk meningkatkan ketangguhan sistem teknologi terhadap bencana alam?",
+                answers: [
+                    { text: "Tidak melakukan cadangan data", correct: false },
+                    { text: "Mengadopsi teknologi tahan bencana dan memiliki rencana pemulihan", correct: true },
+                    { text: "Meningkatkan infrastruktur tanpa evaluasi risiko", correct: false },
+                    { text: "Tidak melakukan tes pemulihan bencana", correct: false }
+                ]
+            },
+            { //11
+                question: "Apa yang dimaksud dengan bencana kegagalan teknologi?",
+                answers: [
+                    { text: "Bencana yang disebabkan oleh faktor alam", correct: false },
+                    { text: "Bencana yang melibatkan ancaman terhadap teknologi", correct: true },
+                    { text: "Bencana yang hanya terjadi di laboratorium", correct: false },
+                    { text: "Bencana yang disebabkan oleh perubahan iklim", correct: false }
+                ]
+            },
+            { //12
+                question: "Contoh bencana kegagalan teknologi yang melibatkan kerusakan sistem komputer atau jaringan disebut...",
+                answers: [
+                    { text: "Tsunami", correct: false },
+                    { text: "Pencurian identitas", correct: true },
+                    { text: "Gempa bumi", correct: false },
+                    { text: "Erupsi gunung berapi", correct: false }
+                ]
+            },
+            { //13
+                question: "Apakah yang dapat menyebabkan bencana kegagalan teknologi di sektor energi?",
+                answers: [
+                    { text: "Peningkatan efisiensi sistem", correct: false },
+                    { text: "Pemadaman listrik massal", correct: true },
+                    { text: "Perawatan rutin peralatan", correct: false },
+                    { text: "Implementasi energi terbarukan", correct: false }
+                ]
+            },
+            { //14
+                question: "Apa yang dapat dilakukan untuk mengurangi risiko bencana kegagalan teknologi dalam bisnis?",
+                answers: [
+                    { text: "Tidak melakukan pembaruan perangkat lunak", correct: false },
+                    { text: "Mengadopsi praktik keamanan yang ketat dan melakukan backup data secara berkala", correct: true },
+                    { text: "Mengabaikan keamanan siber", correct: false },
+                    { text: "Meningkatkan penggunaan teknologi terbaru tanpa evaluasi risiko", correct: false }
+                ]
+            },
+            { //15
+                question: "Bagaimana peran pelatihan karyawan dalam mengurangi dampak bencana kegagalan teknologi di tempat kerja?",
+                answers: [
+                    { text: "Tidak berpengaruh", correct: false },
+                    { text: "Meningkatkan pemahaman karyawan untuk respons dan pemulihan", correct: true },
+                    { text: "Meningkatkan risiko kegagalan teknologi", correct: false },
+                    { text: "Menyebabkan bencana", correct: false }
+                ]
+            },
+            { //16
+                question: "Apa yang dapat dilakukan untuk mengatasi risiko keamanan siber dalam kegagalan teknologi?",
+                answers: [
+                    { text: "Tidak menginstal perangkat lunak keamanan", correct: false },
+                    { text: "Mengimplementasikan kebijakan keamanan yang ketat dan melakukan pembaruan secara teratur", correct: true },
+                    { text: "Menggunakan kata sandi yang sama untuk semua akun", correct: false },
+                    { text: "Membiarkan sistem operasi dan perangkat lunak usang", correct: false }
+                ]
+            },
+            { //17
+                question: "Apa yang dapat menjadi penyebab bencana kegagalan teknologi di sektor transportasi?",
+                answers: [
+                    { text: "Pemeliharaan rutin kendaraan", correct: false },
+                    { text: "Kerusakan peralatan navigasi", correct: true },
+                    { text: "Keamanan jalan yang tinggi", correct: false },
+                    { text: "Penggunaan transportasi berbasis energi terbarukan", correct: false }
+                ]
+            },
+            { //18
+                question: "Bagaimana peran regulasi dan kebijakan dalam mengurangi risiko bencana kegagalan teknologi?",
+                answers: [
+                    { text: "Meningkatkan risiko dengan menghilangkan batasan", correct: false },
+                    { text: "Memberikan panduan dan standar untuk keselamatan dan keamanan", correct: true },
+                    { text: "Tidak berpengaruh pada keberlanjutan teknologi", correct: false },
+                    { text: "Menghambat inovasi", correct: false }
+                ]
+            },
+            { //19
+                question: "Bagaimana peran edukasi masyarakat dalam penanggulangan bencana kegagalan teknologi?",
+                answers: [
+                    { text: "Tidak berpengaruh", correct: false },
+                    { text: "Meningkatkan pemahaman masyarakat tentang penggunaan teknologi yang aman", correct: true },
+                    { text: "Meningkatkan risiko kegagalan teknologi", correct: false },
+                    { text: "Menyebabkan kegagalan sistem", correct: false }
+                ]
+            },
+            { //20
+                question: "Apakah perencanaan darurat dan latihan simulasi bencana teknologi diperlukan dalam penanggulangan bencana kegagalan teknologi?",
+                answers: [
+                    { text: "Tidak diperlukan, karena tidak mungkin terjadi bencana kegagalan teknologi", correct: false },
+                    { text: "Sangat diperlukan untuk meningkatkan kesiapan dan respons cepat", correct: true },
+                    { text: "Diperlukan untuk melibatkan masyarakat dalam kegiatan yang tidak berguna", correct: false },
+                    { text: "Tidak berpengaruh pada pemulihan sistem", correct: false }
                 ]
             },
             // Tambahkan soal dan jawaban lainnya sesuai kebutuhan

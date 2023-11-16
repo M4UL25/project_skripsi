@@ -85,7 +85,7 @@
         var playerName = "";
 
         var questions = [
-            {
+            { //1
                 question: "Yang termasuk bencana geologi?",
                 answers: [
                     { text: "Konflik", correct: false },
@@ -94,7 +94,7 @@
                     { text: "Wabah", correct: false }
                 ]
             },
-            {
+            { //2
                 question: "Faktor penyebab wilayah Indoensia sering dilanda gempa adalah...",
                 answers: [
                     { text: "Hutan di Indonesia sudah gundul", correct: false },
@@ -103,7 +103,7 @@
                     { text: "Terletak diantara dua samudera", correct: false }
                 ]
             },
-            {
+            { //3
                 question: "Beberapa pulau di Indonesia tercatat sebagai pulau yang rawan gempa lantaran akrab dengan sentra gempa. Namun ada pula pulau yang cukup kondusif lantaran jauh dari sentra gempa. Salah satu pulau di Indonesia yang jauh dari sentra gempa adalah...",
                 answers: [
                     { text: "Jawa", correct: false },
@@ -112,7 +112,7 @@
                     { text: "Sumatera", correct: false }
                 ]
             },
-            {
+            { //4
                 question: "Gempa bumi yang terjadi karena aktivitas meletusnya gunung berapi adalah..",
                 answers: [
                     { text: "Tektonik", correct: false },
@@ -121,7 +121,7 @@
                     { text: "Runtuhan", correct: false }
                 ]
             },
-            {
+            { //5
                 question: "Gempa bumi sanggup menjadikan kerusakan yang bervariasi tergantung pada kekuatan gempa tersebut. Alat yang dipakai untuk mencatat kekuatan gempa adalah...",
                 answers: [
                     { text: "Altimeter", correct: false },
@@ -130,6 +130,142 @@
                     { text: "Termograf", correct: false }
                 ]
             },
+            { //6
+                question: "Apa yang dimaksud dengan tanah longsor",
+                answers: [
+                    { text: "Gerakan tanah secara vertikal", correct: false },
+                    { text: "Gerakan tanah secara horizontal", correct: true },
+                    { text: "Gerakan tanah secara diagonal", correct: false },
+                    { text: "Gerakan tanah secara spiral", correct: false }
+                ]
+            },
+            { //7
+                question: "Faktor apa yang dapat menyebabkan terjadinya tanah longsor?",
+                answers: [
+                    { text: "Pemanasan global dan perubahan iklim", correct: false },
+                    { text: "Curah hujan tinggi, erosi, dan kegiatan manusia", correct: true },
+                    { text: "Aktivitas gunung berapi", correct: false },
+                    { text: "Semua jawaban benar", correct: false }
+                ]
+            },
+            { //8
+                question: "Jenis tanah manakah yang cenderung lebih rentan terhadap tanah longsor?",
+                answers: [
+                    { text: "Tanah pasir", correct: false },
+                    { text: "Tanah liat", correct: true },
+                    { text: "Tanah berpasir", correct: false },
+                    { text: "Tanah berbatu", correct: false }
+                ]
+            },
+            { //9
+                question: "Apa yang dimaksud dengan tanah longsor translasional?",
+                answers: [
+                    { text: "Tanah bergerak secara vertikal", correct: false },
+                    { text: "Tanah bergerak secara horizontal", correct: true },
+                    { text: "Tanah bergerak dalam bentuk gelombang", correct: false },
+                    { text: "Tanah bergerak spiral ke atas", correct: false }
+                ]
+            },
+            { //10
+                question: "Mengapa tanah liat cenderung lebih rentan terhadap tanah longsor dibandingkan dengan tanah pasir?",
+                answers: [
+                    { text: "Tanah liat kurang sensitif terhadap air", correct: false },
+                    { text: "Tanah liat memiliki struktur yang lebih padat", correct: true },
+                    { text: "Tanah liat memiliki kemampuan drainase yang baik", correct: false },
+                    { text: "Tanah liat lebih stabil secara alami", correct: false }
+                ]
+            },
+            { //11
+                question: "Apa peran vegetasi dalam mencegah tanah longsor?",
+                answers: [
+                    { text: "Vegetasi dapat meningkatkan erosi tanah", correct: false },
+                    { text: "Vegetasi dapat mengurangi kecepatan aliran air dan memperkuat tanah", correct: true },
+                    { text: "Akar tumbuhan dapat menyebabkan kerusakan pada tanah", correct: false },
+                    { text: "Vegetasi tidak memiliki pengaruh signifikan terhadap tanah longsor", correct: false }
+                ]
+            },
+            { //12
+                question: "Apa yang menyebabkan terjadinya gempa bumi?",
+                answers: [
+                    { text: "Pemanasan global", correct: false },
+                    { text: "Pergerakan lempeng bumi", correct: true },
+                    { text: "Aktivitas vulkanik", correct: false },
+                    { text: "Gelombang radioaktif", correct: false }
+                ]
+            },
+            { //13
+                question: "Alat apa yang digunakan untuk mengukur kekuatan gempa bumi?",
+                answers: [
+                    { text: "Barometer", correct: false },
+                    { text: "Seismograf", correct: true },
+                    { text: "Termometer", correct: false },
+                    { text: "Kompas", correct: false }
+                ]
+            },
+            { //14
+                question: "Skala Richter digunakan untuk mengukur apa pada gempa bumi?",
+                answers: [
+                    { text: "Kedalaman pusat gempa", correct: false },
+                    { text: "Magnitudo gempa", correct: true },
+                    { text: "Durasi gempa", correct: false },
+                    { text: "Intensitas gempa", correct: false }
+                ]
+            },
+            { //15
+                question: "Langkah apa yang dapat diambil untuk meningkatkan keselamatan selama gempa bumi?",
+                answers: [
+                    { text: "Mengabaikan peringatan dini", correct: false },
+                    { text: "Menjauhi jendela dan benda berat yang bisa jatuh", correct: true },
+                    { text: "Berlindung di bawah struktur yang rapuh", correct: false },
+                    { text: "Berlari keluar dari bangunan segera setelah gempa terjadi", correct: false }
+                ]
+            },
+            { //16
+                question: "Apa yang dimaksud dengan 'Drop, Cover, and Hold On' dalam protokol tanggap gempa?",
+                answers: [
+                    { text: "Melempar barang-barang di sekitar", correct: false },
+                    { text: "Berlindung di bawah meja atau tempat yang aman, dan menahan diri", correct: true },
+                    { text: "Mengabaikan situasi dan melanjutkan kegiatan seperti biasa", correct: false },
+                    { text: "Mencari tempat yang tinggi saat gempa terjadi", correct: false }
+                ]
+            },
+            { //17
+                question: "Mengapa penting memiliki rencana evakuasi dan tempat kumpul keluarga selama gempa?",
+                answers: [
+                    { text: "Untuk menghindari guncangan gempa", correct: false },
+                    { text: "Memudahkan komunikasi dan pertemuan keluarga setelah gempa", correct: true },
+                    { text: "Agar dapat segera pulang setelah gempa berakhir", correct: false },
+                    { text: "Rencana evakuasi tidak diperlukan", correct: false }
+                ]
+            },
+            { //18
+                question: "Langkah apa yang dapat diambil untuk mencegah tanah longsor?",
+                answers: [
+                    { text: "Menebang semua pohon di area berisiko", correct: false },
+                    { text: "Membuat teras atau tanggul", correct: true },
+                    { text: "Meningkatkan curah hujan di daerah tersebut", correct: false },
+                    { text: "Mempercepat aliran air di lereng", correct: false }
+                ]
+            },
+            { //19
+                question: "Apa peran dinding penahan atau tanggul dalam pengelolaan tanah longsor?",
+                answers: [
+                    { text: "Mempercepat erosi tanah", correct: false },
+                    { text: "Memberikan dukungan struktural dan mengurangi tekanan tanah", correct: true },
+                    { text: "Membatasi aliran air", correct: false },
+                    { text: "Meningkatkan risiko tanah longsor", correct: false }
+                ]
+            },
+            { //20
+                question: "Mengapa penting untuk mengidentifikasi faktor pemicu tanah longsor?",
+                answers: [
+                    { text: "Agar dapat meningkatkan aktivitas manusia di area tersebut", correct: false },
+                    { text: "Sebagai dasar perencanaan dan penanggulangan yang efektif", correct: true },
+                    { text: "Untuk menyalahkan alam atas terjadinya tanah longsor", correct: false },
+                    { text: "Identifikasi tidak diperlukan dalam pengelolaan tanah longsor", correct: false }
+                ]
+            },
+
             // Tambahkan soal dan jawaban lainnya sesuai kebutuhan
         ];
 
