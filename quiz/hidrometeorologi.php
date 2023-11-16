@@ -330,6 +330,7 @@
             resultsContainer.innerHTML = "<h2 class='text-center m'>Hasil Kuis</h2>";
             resultsContainer.innerHTML += "<h2 style='text-transform: capitalize'>Nama: " + playerName + "</h2>";
             resultsContainer.innerHTML += "<h2>Skor Anda: <strong> " + score + "/" + questions.length + "</strong> </h2>";
+            resultsContainer.innerHTML += "<h2>Nilai: <strong>" + score * 5 + "</strong> </h2>";
         }
 
         function exitQuiz() {
