@@ -8,7 +8,7 @@ include 'admin/koneksi/koneksi.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
+    <title>Edukasi Bencana</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="src/css/style.css">
@@ -23,19 +23,19 @@ include 'admin/koneksi/koneksi.php';
     <nav class="navbar navbar-expand-lg sticky-top bg-body-tertiary">
         <div class="container py-3">
             <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                <img src="src/img/de_logo.png" width="170" alt="">
+                <img src="src/img/de_logo.png" width="20%" alt="">
                 <div class="row">
-                    <div class="col navbar-nav">
+                    <div class="col-sm-4 navbar-nav">
                         <a class="nav-link" aria-current="page" href="index.php">
                             <h5>Edukasi</h5>
                         </a>
                     </div>
-                    <div class="col navbar-nav">
+                    <div class="col-sm-4 navbar-nav">
                         <a class="nav-link" aria-current="page" href="berita.php">
                             <h5>Berita</h5>
                         </a>
                     </div>
-                    <div class="col navbar-nav">
+                    <div class="col-sm-4 navbar-nav">
                         <a class="nav-link" aria-current="page" href="quiz.php">
                             <h5>Kuis</h5>
                         </a>
@@ -211,9 +211,11 @@ include 'admin/koneksi/koneksi.php';
                 <div class="col-md-4">
                     <h3 class="f-ab text-center">Pasca-Bencana</h3>
                     <ul>
-                        <li>Mengerahkan relawan beserta dengan dukungan logistik, peralatan evakuasi, serta pemenuhan kebutuhan dasar, </li>
+                        <li>Mengerahkan relawan beserta dengan dukungan logistik, peralatan evakuasi, serta pemenuhan
+                            kebutuhan dasar, </li>
                         <li>Melakukan rehabilitasi, dan normalisasi, kegiatan layanan publik,</li>
-                        <li>Rekonstruksi, pembangunan kembali sarana prasarana, serta kelembagaan dan instansi terkait.</li>
+                        <li>Rekonstruksi, pembangunan kembali sarana prasarana, serta kelembagaan dan instansi terkait.
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -253,6 +255,22 @@ include 'admin/koneksi/koneksi.php';
                         <?php
                     endwhile;
                     ?>
+                </div>
+                <div class="col">
+                    <form action="">
+                        <h3 class="text-white">Kritik dan Saran</h3>
+                        <div class="mb-3">
+                            <label for="exampleFormControlInput1" class="form-label text-white">Nama</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1" class="form-label text-white">Pesan</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="col-12" align="right">
+                            <button type="submit" class="btn btn-light" name="aksi" value="kirim">Kirim</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>
